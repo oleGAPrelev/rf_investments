@@ -1,0 +1,27 @@
+.nav_block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 110px;
+}
+
+.logo_btn {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 59px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav_menu {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	gap: 57px;
+	justify-content: space-between;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.nav_menu li {
+	cursor: pointer;
+}
