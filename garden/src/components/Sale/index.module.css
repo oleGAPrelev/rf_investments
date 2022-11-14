@@ -1,0 +1,37 @@
+.sale_container {
+	background-color: #a1e2eb;
+	height: 600px;
+	margin-top: 57px;
+}
+
+.sale_block {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+}
+
+.h_button_block {
+	width: 765px;
+	margin: 130px 0 139px 0;
+}
+
+.h_button_block h2 {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 80px;
+	margin-bottom: 60px;
+	line-height: 130%;
+}
+
+.accent {
+	display: block;
+	font-weight: 700;
+	font-size: 63px;
+}
+
+button {
+	margin-right: 30px;
+}
+
+.sale_block img {
+	margin-top: -70px;
+}
