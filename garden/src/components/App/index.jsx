@@ -1,3 +1,4 @@
+import Catigories from '../Categories';
 import Nav from '../Nav';
 import Sale from '../Sale';
 
@@ -6,6 +7,7 @@ function App() {
 		<div>
 			<Nav />
 			<Sale />
+			<Catigories />
 		</div>
 	);
 }
