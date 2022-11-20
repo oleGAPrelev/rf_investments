@@ -1,0 +1,58 @@
+.footer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 211px;
+}
+
+.footer h2 {
+	margin: 170px 0 25px;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	width: 600px;
+}
+
+.contacts p {
+	font-weight: 600;
+	font-size: 70px;
+	line-height: 130%;
+}
+
+.networcs {
+	display: flex;
+	align-items: center;
+	gap: 33px;
+	margin: 33px 0;
+}
+.networcs p {
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 130%;
+}
+
+.networcs img {
+	margin: 13px;
+}
+
+.address p:nth-child(2) {
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 130%;
+}
+
+.address span {
+	display: block;
+}
+
+.address p:nth-child(3) {
+	margin: 20px 0;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 130%;
+}
+
+.accent {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 130%;
+}

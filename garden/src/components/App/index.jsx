@@ -1,6 +1,7 @@
 import BargainSale from '../BargainSale';
 import Catigories from '../Categories';
 import Discount from '../Discount';
+import Footer from '../Footer';
 import Nav from '../Nav';
 import Sale from '../Sale';
 
@@ -12,6 +13,7 @@ function App() {
 			<Catigories />
 			<Discount />
 			<BargainSale />
+			<Footer />
 		</div>
 	);
 }
