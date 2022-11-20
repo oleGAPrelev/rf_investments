@@ -25,3 +25,7 @@
 .nav_menu li {
 	cursor: pointer;
 }
+
+.nav_menu li:active {
+	color: #339933;
+}

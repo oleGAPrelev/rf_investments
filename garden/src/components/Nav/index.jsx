@@ -19,7 +19,9 @@ export default function Nav() {
 				<li>Купон</li>
 				<li>Акции</li>
 				<li>Контакты</li>
-				<img src={bag} alt="bag" />
+				<a href="#">
+					<img src={bag} alt="bag" />
+				</a>
 			</ul>
 		</nav>
 	);

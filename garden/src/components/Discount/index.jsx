@@ -1,6 +1,6 @@
 import React from 'react';
-import Button from '../../../UI/Button';
-import Input from '../../../UI/Input';
+import Button from '../../UI/Button';
+import Input from '../../UI/Input';
 import s from './index.module.css';
 import gnome from './media/discount_img.png';
 
@@ -16,7 +16,7 @@ export default function Discount() {
 						Скидка 5%
 						<span className={s.accent}>на первый заказ</span>
 					</h2>
-					<Input type="tel" />
+					<Input type="tel" value="+7" />
 					<Button type="discount_button">Получить скидку</Button>
 				</div>
 			</div>

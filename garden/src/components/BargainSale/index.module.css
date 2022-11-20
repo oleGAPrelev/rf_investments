@@ -1,0 +1,12 @@
+.bargain_block h2 {
+	margin: 49px 0 21px;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+}
+
+.info_bargain_block {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 44px;
+}
