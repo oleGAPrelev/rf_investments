@@ -1,20 +1,22 @@
-import BargainSale from '../BargainSale';
-import Catigories from '../Categories';
-import Discount from '../Discount';
+import { Route, Routes } from 'react-router-dom';
+import CategoriesPages from '../../pages/CategoriesPages';
+import HomePage from '../../pages/HomePage';
 import Footer from '../Footer';
 import Nav from '../Nav';
-import Sale from '../Sale';
 
 function App() {
 	return (
-		<div>
+		<>
 			<Nav />
-			<Sale />
-			<Catigories />
-			<Discount />
-			<BargainSale />
+			<Routes>
+				<Route path="/home" element={<HomePage />} />
+				<Route path="/categories" element={<CategoriesPages />} />
+				<Route />
+				<Route />
+				<Route />
+			</Routes>
 			<Footer />
-		</div>
+		</>
 	);
 }
 

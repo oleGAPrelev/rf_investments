@@ -3,25 +3,26 @@ import Button from '../../UI/Button';
 import s from './index.module.css';
 import logo from './media/garden_logo.png';
 import bag from './media/bag_nav.png';
+import { Link } from 'react-router-dom';
 
 export default function Nav() {
 	return (
 		<nav className={['wrapper', s.nav_block].join(' ')}>
 			<div className={s.logo_btn}>
-				<a href="a">
+				<Link to="/home">
 					<img src={logo} alt="logo" />
-				</a>
+				</Link>
 				<Button>Каталог</Button>
 			</div>
 
 			<ul className={s.nav_menu}>
-				<li>Категории</li>
-				<li>Купон</li>
-				<li>Акции</li>
-				<li>Контакты</li>
-				<a href="#">
+				<Link to="/categories">Категории</Link>
+				<Link to="/coupon">Купон</Link>
+				<Link to="/stock">Акции</Link>
+				<Link to="/contacts">Контакты</Link>
+				<Link to="">
 					<img src={bag} alt="bag" />
-				</a>
+				</Link>
 			</ul>
 		</nav>
 	);
