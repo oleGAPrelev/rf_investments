@@ -9,11 +9,25 @@ a {
 	object-fit: cover;
 }
 
-.bargainContainer p:nth-child(2) {
+.price {
 	margin: 20px 0 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.bargainContainer p:nth-child(1) {
 	font-weight: 600;
 	font-size: 30px;
 	line-height: 130%;
+}
+
+.bargainContainer p:nth-child(2) {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 130%;
+	color: #8b8b8b;
 }
 
 .bargainContainer p:nth-child(3) {

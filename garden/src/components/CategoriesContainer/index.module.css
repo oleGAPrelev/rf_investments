@@ -1,0 +1,28 @@
+.catigories {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 130%;
+	margin-top: 20px;
+}
+
+.catigories p {
+	display: flex;
+	justify-content: center;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 130%;
+	margin-top: 20px;
+	color: #000000;
+}
+
+.catigories a {
+	text-decoration: none;
+}
+
+.catigories img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}

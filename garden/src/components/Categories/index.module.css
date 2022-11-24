@@ -12,26 +12,8 @@
 	margin-top: 40px;
 }
 
-.catigories {
-	display: flex;
-	justify-content: space-between;
+.categories_container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 	gap: 32px;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 130%;
-	margin-top: 20px;
-}
-
-.catigories p {
-	display: flex;
-	justify-content: center;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 130%;
-	margin-top: 20px;
-	color: #000000;
-}
-
-.catigories a {
-	text-decoration: none;
 }
