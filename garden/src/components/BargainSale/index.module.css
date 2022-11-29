@@ -1,12 +1,38 @@
-.bargain_block h2 {
-	margin: 49px 0 21px;
-	font-weight: 700;
-	font-size: 40px;
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.bargainContainer img {
+	width: 319px;
+	height: 276px;
+	object-fit: cover;
+}
+
+.price {
+	margin: 20px 0 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+.bargainContainer p:nth-child(1) {
+	font-weight: 600;
+	font-size: 30px;
 	line-height: 130%;
 }
 
-.info_bargain_block {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 44px;
+.bargainContainer p:nth-child(2) {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 130%;
+	color: #8b8b8b;
+}
+
+.bargainContainer p:nth-child(3) {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 130%;
+	margin-bottom: 30px;
 }

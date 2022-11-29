@@ -1,5 +1,5 @@
 import React from 'react';
-import BargainSale from '../../components/BargainSale';
+import BargainSaleContainer from '../../components/BargainSaleContainer';
 import CategoriesContainer from '../../components/CategoriesContainer';
 import Discount from '../../components/Discount';
 import Sale from '../../components/Sale';
@@ -10,7 +10,7 @@ export default function HomePage() {
 			<Sale />
 			<CategoriesContainer />
 			<Discount />
-			<BargainSale />
+			<BargainSaleContainer />
 		</div>
 	);
 }

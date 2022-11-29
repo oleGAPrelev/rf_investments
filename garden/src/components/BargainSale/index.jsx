@@ -1,17 +1,24 @@
 import React from 'react';
 import s from './index.module.css';
-import { products } from '../../data/products';
-import BargainSaleContainer from '../BargainSaleContainer';
 
-export default function BargainSale() {
+export default function BargainSale({ title, price, img, discont_price }) {
+	const img_style = img ?? '../../../media_products/not_images.png';
+
 	return (
-		<div className={['wrapper', s.bargain_block].join(' ')}>
-			<h2>Акции</h2>
-			<div className={s.info_bargain_block}>
-				{products.map((el) => (
-					<BargainSaleContainer key={el.id} {...el} />
-				))}
-			</div>
+		<div>
+			{discont_price === '' ? (
+				''
+			) : (
+				<a href="#" className={s.bargainContainer}>
+					<img src={img_style} alt="img" />
+					<div className={s.price}>
+						<p>{price}p</p>
+						<p>{discont_price}</p>
+						<p>{((price - discont_price) / price) * 100}%</p>
+					</div>
+					<p>{title}</p>
+				</a>
+			)}
 		</div>
 	);
 }
