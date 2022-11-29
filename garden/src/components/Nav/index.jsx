@@ -9,7 +9,7 @@ export default function Nav() {
 	return (
 		<nav className={['wrapper', s.nav_block].join(' ')}>
 			<div className={s.logo_btn}>
-				<Link to="/home">
+				<Link to="/">
 					<img src={logo} alt="logo" />
 				</Link>
 				<Button>Каталог</Button>

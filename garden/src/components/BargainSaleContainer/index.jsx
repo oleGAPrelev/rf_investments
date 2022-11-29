@@ -10,14 +10,20 @@ export default function BargainSaleContainer({
 	const img_style = img ?? '../../../media_products/not_images.png';
 
 	return (
-		<a href="#" className={s.bargainContainer}>
-			<img src={img_style} alt="img" />
-			<div className={s.price}>
-				<p>{price}p</p>
-				<p>{discont_price}</p>
-				<p>{((price - discont_price) / price) * 100}%</p>
-			</div>
-			<p>{title}</p>
-		</a>
+		<div>
+			{discont_price === '' ? (
+				''
+			) : (
+				<a href="#" className={s.bargainContainer}>
+					<img src={img_style} alt="img" />
+					<div className={s.price}>
+						<p>{price}p</p>
+						<p>{discont_price}</p>
+						<p>{((price - discont_price) / price) * 100}%</p>
+					</div>
+					<p>{title}</p>
+				</a>
+			)}
+		</div>
 	);
 }

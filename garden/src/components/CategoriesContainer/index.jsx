@@ -1,13 +1,66 @@
 import React from 'react';
+import Button from '../../UI/Button';
 import s from './index.module.css';
+import { categories } from '../../data/categories';
+import Categories from '../Categories';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
-export default function CategoriesContainer({ title, img }) {
+export default function CategoriesContainer() {
+	function SampleNextArrow(props) {
+		const { className, style, onClick } = props;
+		return (
+			<div
+				className={className}
+				style={{
+					...style,
+					display: 'block',
+					background: '#339933',
+					borderRadius: '20%',
+				}}
+				onClick={onClick}
+			/>
+		);
+	}
+
+	function SamplePrevArrow(props) {
+		const { className, style, onClick } = props;
+		return (
+			<div
+				className={className}
+				style={{
+					...style,
+					display: 'block',
+					background: '#339933',
+					borderRadius: '20%',
+				}}
+				onClick={onClick}
+			/>
+		);
+	}
+
+	const settings = {
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		nextArrow: <SampleNextArrow />,
+		prevArrow: <SamplePrevArrow />,
+	};
 	return (
-		<label className={s.catigories}>
-			<a href="#">
-				<img src={img} alt="fertilizers" />
-				<p>{title}</p>
-			</a>
-		</label>
+		<div className={['wrapper', s.all_catigories].join(' ')}>
+			<div className={s.catigori}>
+				<h2>Категории</h2>
+				<Button type="all_catigories">Все категории </Button>
+			</div>
+
+			<Slider {...settings} className={s.categories_container}>
+				{categories.map((el) => (
+					<Categories key={el.id} {...el} />
+				))}
+			</Slider>
+		</div>
 	);
 }
