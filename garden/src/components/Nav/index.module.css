@@ -22,10 +22,6 @@
 	text-transform: uppercase;
 }
 
-.nav_menu li {
-	cursor: pointer;
-}
-
-.nav_menu li:active {
+.nav_menu a:focus {
 	color: #339933;
 }

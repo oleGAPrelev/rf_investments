@@ -1,4 +1,3 @@
-import React from 'react';
 import Button from '../../UI/Button';
 import s from './index.module.css';
 import { categories } from '../../data/categories';
@@ -6,6 +5,7 @@ import Categories from '../Categories';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Link } from 'react-router-dom';
 
 export default function CategoriesContainer() {
 	function SampleNextArrow(props) {
@@ -49,11 +49,14 @@ export default function CategoriesContainer() {
 		nextArrow: <SampleNextArrow />,
 		prevArrow: <SamplePrevArrow />,
 	};
+
 	return (
 		<div className={['wrapper', s.all_catigories].join(' ')}>
 			<div className={s.catigori}>
 				<h2>Категории</h2>
-				<Button type="all_catigories">Все категории </Button>
+				<Link to="/categories">
+					<Button type="all_catigories">Все категории </Button>
+				</Link>
 			</div>
 
 			<Slider {...settings} className={s.categories_container}>
