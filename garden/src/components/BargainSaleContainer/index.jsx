@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import s from './index.module.css';
-import { products } from '../../data/products';
 import BargainSale from '../BargainSale';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Context } from '../../context';
 
 export default function BargainSaleContainer() {
+	const { products } = useContext(Context);
 	function SampleNextArrow(props) {
 		const { className, style, onClick } = props;
 		return (

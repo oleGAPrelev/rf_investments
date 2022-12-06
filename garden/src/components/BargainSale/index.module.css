@@ -9,12 +9,13 @@ a {
 	object-fit: cover;
 }
 
-.price {
+.price_block {
 	margin: 20px 0 10px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	gap: 30px;
+	max-width: 319px;
 }
 
 .bargainContainer p:nth-child(1) {
@@ -34,5 +35,12 @@ a {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 130%;
+}
+
+.title_block p:nth-child(1) {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 130%;
 	margin-bottom: 50px;
+	max-width: 319px;
 }

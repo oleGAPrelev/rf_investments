@@ -1,13 +1,15 @@
 import Button from '../../UI/Button';
 import s from './index.module.css';
-import { categories } from '../../data/categories';
 import Categories from '../Categories';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { Context } from '../../context';
 
 export default function CategoriesContainer() {
+	const { catigories } = useContext(Context);
 	function SampleNextArrow(props) {
 		const { className, style, onClick } = props;
 		return (
@@ -60,7 +62,7 @@ export default function CategoriesContainer() {
 			</div>
 
 			<Slider {...settings} className={s.categories_container}>
-				{categories.map((el) => (
+				{catigories.map((el) => (
 					<Categories key={el.id} {...el} />
 				))}
 			</Slider>
