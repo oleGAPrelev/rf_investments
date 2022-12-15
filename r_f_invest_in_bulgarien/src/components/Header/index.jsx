@@ -6,7 +6,7 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 
 export default function Header() {
 	return (
-		<div className={s.header_container}>
+		<section className={s.header_container}>
 			<div className={['wrapper', s.header_block].join(' ')}>
 				<div className={s.contacts}>
 					<FaPhoneAlt className={s.phone} />
@@ -27,6 +27,6 @@ export default function Header() {
 					</a>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }
