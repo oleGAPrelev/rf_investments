@@ -1,0 +1,16 @@
+.video_block {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.info_text h2 {
+	margin: 100px 0 30px 0;
+	font-weight: 600;
+	font-size: 48px;
+}
+
+.info_text p {
+	max-width: 380px;
+	font-weight: 300;
+	font-size: 22px;
+}

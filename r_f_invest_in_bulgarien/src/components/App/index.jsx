@@ -1,6 +1,7 @@
 import Header from '../Header';
 import Nav from '../Nav';
 import Services from '../Services';
+import YouTubeLink from '../YouTubeLink';
 
 function App() {
 	return (
@@ -8,6 +9,7 @@ function App() {
 			<Header />
 			<Nav />
 			<Services />
+			<YouTubeLink />
 		</div>
 	);
 }
