@@ -1,0 +1,39 @@
+.header_container {
+	background-color: rgb(3, 3, 75);
+}
+
+.header_block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	color: white;
+}
+
+.contacts {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contacts p {
+	margin: 0 15px;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.phone {
+	color: rgb(8, 8, 207);
+	width: 25px;
+	height: 25px;
+}
+
+.icons_block a {
+	color: white;
+}
+
+.icons {
+	width: 25px;
+	height: 25px;
+	margin-left: 15px;
+}
