@@ -16,13 +16,14 @@ export default function Header() {
 				</div>
 
 				<div className={s.icons_block}>
+					<base target="_blank" />
 					<a href="/">
 						<FaFacebookF className={s.icons} />
 					</a>
-					<a href="/">
+					<a href="https://www.youtube.com/watch?v=MeCWAFMu_XE">
 						<CiYoutube className={s.icons} />
 					</a>
-					<a href="/">
+					<a href="https://www.instagram.com/rf_investpro_eu/?igshid=YmMyMTA2M2Y%3D">
 						<AiOutlineInstagram className={s.icons} />
 					</a>
 				</div>

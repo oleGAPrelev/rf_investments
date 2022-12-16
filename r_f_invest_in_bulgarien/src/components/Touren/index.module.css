@@ -1,0 +1,47 @@
+.touren_container {
+	background-color: #ebebeb;
+	padding: 100px;
+	margin: 100px 0;
+}
+
+.touren_h h2 {
+	text-align: center;
+	margin-bottom: 100px;
+	font-weight: 700;
+	font-size: 55px;
+}
+
+.touren_block {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 100px;
+}
+
+.touren_block img {
+	object-fit: cover;
+	width: 750px;
+	height: 500px;
+	border-radius: 10px;
+}
+
+.touren_block h3 {
+	font-weight: 600;
+	font-size: 48px;
+	margin: 70px 0;
+}
+
+.accent {
+	color: rgb(8, 8, 207);
+}
+
+.touren_block p {
+	font-weight: 300;
+	font-size: 20.9px;
+	text-align: justify;
+	color: #747d8c;
+}
+
+.touren_block button {
+	padding: 20px 50px;
+	margin: 50px 0;
+}

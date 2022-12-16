@@ -1,6 +1,7 @@
 import Header from '../Header';
 import Nav from '../Nav';
 import Services from '../Services';
+import Touren from '../Touren';
 import YouTubeLink from '../YouTubeLink';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
 			<Nav />
 			<Services />
 			<YouTubeLink />
+			<Touren />
 		</div>
 	);
 }
