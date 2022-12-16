@@ -1,0 +1,35 @@
+.crypto_container {
+	background-color: rgb(3, 3, 75);
+}
+
+.crypto_block {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	color: white;
+}
+
+.crypto_block h2 {
+	font-weight: 700;
+	font-size: 50px;
+	margin-top: 100px;
+	max-width: 600px;
+}
+
+.crypto_block p {
+	font-weight: 300;
+	font-size: 20.9px;
+	text-align: justify;
+	color: #747d8c;
+	max-width: 600px;
+	margin: 50px 0;
+}
+
+.crypto_block button {
+	padding: 20px 50px;
+}
+
+.crypto_block img {
+	object-fit: cover;
+	width: 700px;
+	height: 500px;
+}

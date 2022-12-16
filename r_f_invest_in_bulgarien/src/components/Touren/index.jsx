@@ -5,7 +5,7 @@ import touren from './media/touren_img.png';
 
 export default function Touren() {
 	return (
-		<div className={s.touren_container}>
+		<section className={s.touren_container}>
 			<div className={['wrapper', s.touren_h].join(' ')}>
 				<h2>Aktuelle Touren</h2>
 
@@ -28,6 +28,6 @@ export default function Touren() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

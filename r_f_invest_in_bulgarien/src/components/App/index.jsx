@@ -1,4 +1,6 @@
+import Angebote from '../Angebote';
 import Header from '../Header';
+import KryptoBlock from '../KryptoBlock';
 import Nav from '../Nav';
 import Services from '../Services';
 import Touren from '../Touren';
@@ -12,6 +14,8 @@ function App() {
 			<Services />
 			<YouTubeLink />
 			<Touren />
+			<Angebote />
+			<KryptoBlock />
 		</div>
 	);
 }
