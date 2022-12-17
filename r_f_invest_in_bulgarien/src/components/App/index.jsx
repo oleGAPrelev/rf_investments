@@ -1,4 +1,6 @@
 import Angebote from '../Angebote';
+import BeratungContainer from '../BeratungContainer';
+import CustomerReviews from '../CustomerReviews';
 import Header from '../Header';
 import KryptoBlock from '../KryptoBlock';
 import Nav from '../Nav';
@@ -16,6 +18,8 @@ function App() {
 			<Touren />
 			<Angebote />
 			<KryptoBlock />
+			<CustomerReviews />
+			<BeratungContainer />
 		</div>
 	);
 }

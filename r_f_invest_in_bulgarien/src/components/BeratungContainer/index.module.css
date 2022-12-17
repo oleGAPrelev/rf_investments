@@ -1,0 +1,19 @@
+.beratung_container {
+	background-image: url('media/bulgaria.png');
+	background-size: cover;
+	background-position: center;
+	color: white;
+	padding-bottom: 200px;
+}
+
+.beratung_block h2 {
+	font-weight: 600;
+	font-size: 48px;
+	padding-top: 300px;
+}
+
+.beratung_block p {
+	font-weight: 300;
+	font-size: 25px;
+	margin: 50px 0;
+}
