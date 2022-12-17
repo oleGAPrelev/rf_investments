@@ -1,6 +1,8 @@
+import AbountUs from '../AbountUs';
 import Angebote from '../Angebote';
-import BeratungContainer from '../BeratungContainer';
+import Consultant from '../Consultant';
 import CustomerReviews from '../CustomerReviews';
+import Footer from '../Footer';
 import Header from '../Header';
 import KryptoBlock from '../KryptoBlock';
 import Nav from '../Nav';
@@ -19,7 +21,9 @@ function App() {
 			<Angebote />
 			<KryptoBlock />
 			<CustomerReviews />
-			<BeratungContainer />
+			<Consultant />
+			<AbountUs />
+			<Footer />
 		</div>
 	);
 }

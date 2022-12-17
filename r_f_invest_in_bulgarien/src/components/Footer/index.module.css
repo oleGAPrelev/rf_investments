@@ -1,0 +1,29 @@
+.footer {
+	background-color: rgb(3, 3, 75);
+	color: white;
+}
+
+.footer_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+
+.footer_container p {
+	font-weight: 300;
+	font-size: 20px;
+}
+
+.nav_menu {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	gap: 68px;
+	justify-content: space-between;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.nav_menu li {
+	cursor: pointer;
+}

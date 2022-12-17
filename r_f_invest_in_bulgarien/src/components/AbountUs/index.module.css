@@ -1,0 +1,42 @@
+.about_us_section {
+	background-color: rgb(3, 3, 75);
+	color: white;
+}
+
+.about_us_logo {
+	padding: 50px 0;
+}
+
+.about_us_container {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	gap: 50px;
+}
+
+.about_us_container p {
+	font-weight: 300;
+	font-size: 23px;
+}
+
+.icons_block a {
+	color: white;
+}
+
+.icons {
+	width: 25px;
+	height: 25px;
+	margin: 0 15px 0 0;
+}
+
+.phone {
+	width: 25px;
+	height: 25px;
+	margin: 0 15px 0 0;
+}
+
+.contacts {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+}
