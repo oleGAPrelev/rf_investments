@@ -5,7 +5,7 @@ export default function Footer() {
 	return (
 		<footer className={s.footer}>
 			<div className={['wrapper', s.footer_container].join(' ')}>
-				<p>© Copyright 2021 / R&F INVEST</p>
+				<p>R&F INVESTMENS</p>
 
 				<ul className={s.nav_menu}>
 					<li>Datenschutz</li>

@@ -16,15 +16,15 @@ export default function Touren() {
 
 					<div>
 						<h3>
-							Bulgarien kennenlernen für <span className={s.accent}> 199 </span>
+							Bulgarien kennenlernen für <span className={s.accent}> 250 </span>
 							EUR
 						</h3>
 						<p>
 							Unser erfahrenes Personal organisiert Ihre gesamte Reise von Ihren
-							Ankunft in Bulgarien bis zu Ihrer Abreise für nur 199 -EUR
+							Ankunft in Bulgarien bis zu Ihrer Abreise für nur 250 -EUR
 						</p>
 
-						<Button>Mehr</Button>
+						<Button>4 Mehr</Button>
 					</div>
 				</div>
 			</div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 import Button from '../../UI/Button';
 import bitcoin from './media/bitcoin.png';
 import s from './index.module.css';
@@ -13,7 +14,15 @@ export default function KryptoBlock() {
 						Bei uns haben Sie die Möglichkeit Ihre Wohnung mit Kryptowährungen
 						zu kaufen! Interesse? Fragen Sie hier an!
 					</p>
-					<Button>Mehr</Button>
+					<Link
+						to="consultant"
+						spy={true}
+						smooth={true}
+						offset={50}
+						duration={500}
+					>
+						<Button> Mehr</Button>
+					</Link>
 				</div>
 
 				<div>

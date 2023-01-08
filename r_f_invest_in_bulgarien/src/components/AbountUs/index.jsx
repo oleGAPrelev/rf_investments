@@ -16,11 +16,11 @@ export default function AbountUs() {
 				<div className={s.about_us_container}>
 					<div>
 						<p>
-							Die RF Invest ist ein europaweit tätiger, auf die
+							Die RF Investments ist ein europaweit tätiger, auf die
 							Wohnimmobilienwirtschaft spezialisierte Unternehmen. Der
 							Tätigkeitsschwerpunkt liegt im Verkauf und Vermietung von
 							Immobilienobjekten auf gefragten Urlaubsorten. Mit ihrem Angebot
-							realisiert die RF Invest Potentiale sowohl für private
+							realisiert die RF Investments Potentiale sowohl für private
 							Kapitalanleger als auch für Selbstnutzer. Unsere kompetente
 							Mitarbeiter organisieren den Kauf und begleiten die ganzen
 							Prozesse bis zum Schlüsselübergabe von ihrer Traumimmobilie.
@@ -28,7 +28,7 @@ export default function AbountUs() {
 					</div>
 
 					<div>
-						<p>R&F INVEST Harmony Suites 12-14 8240 Nesebar, Bulgarien</p>
+						<p>R&F INVESTMENS OOD Harmony Suites 12 8240 Nesebar, Bulgarien</p>
 					</div>
 
 					<div>
