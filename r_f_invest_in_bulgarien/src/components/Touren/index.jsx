@@ -3,7 +3,7 @@ import Button from '../../UI/Button';
 import s from './index.module.css';
 import touren from './media/touren_img.png';
 
-export default function Touren() {
+export default function Touren({ setModal }) {
 	return (
 		<section className={s.touren_container}>
 			<div className={['wrapper', s.touren_h].join(' ')}>
@@ -24,7 +24,7 @@ export default function Touren() {
 							Ankunft in Bulgarien bis zu Ihrer Abreise für nur 250 -EUR
 						</p>
 
-						<Button>4 Mehr</Button>
+						<Button onClick={() => console.log(setModal(true))}> Mehr</Button>
 					</div>
 				</div>
 			</div>
