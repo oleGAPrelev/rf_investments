@@ -1,27 +1,27 @@
 .footer {
-	background-color: rgb(3, 3, 75);
-	color: white;
+	background-color: #131a32;
+	color: #ffffff;
 }
 
 .footer_container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 100px;
+	padding: 32px 0 85px 0;
 }
 
 .footer_container p {
-	font-weight: 300;
-	font-size: 20px;
+	font-weight: 400;
+	font-size: 16px;
 }
 
 .nav_menu {
-	display: grid;
-	grid-template-columns: repeat(3, auto);
-	gap: 68px;
-	justify-content: space-between;
+	display: flex;
+	gap: 52px;
 	list-style: none;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
+	font-weight: 500;
+	font-size: 16px;
 }
 
 .nav_menu li {

@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './index.module.css';
-import logo from './media/buh_one_logo.png';
+import logo from './media/nav_logo.png';
 import { FaPhoneAlt, FaFacebookF } from 'react-icons/fa';
 import { CiYoutube } from 'react-icons/ci';
 import { AiOutlineInstagram } from 'react-icons/ai';
@@ -27,8 +27,10 @@ export default function AbountUs() {
 						</p>
 					</div>
 
-					<div>
-						<p>R&F INVESTMENS OOD Harmony Suites 12 8240 Nesebar, Bulgarien</p>
+					<div className={s.rf}>
+						<p> R&F INVESTMENS OOD </p>
+						<p> Harmony Suites 12 </p>
+						<p> 8240 Nesebar, Bulgarien </p>
 					</div>
 
 					<div>

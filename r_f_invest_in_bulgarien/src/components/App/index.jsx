@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import AbountUs from '../AbountUs';
 import Angebote from '../Angebote';
-import Consultant from '../Consultant';
+import Consultation from '../Consultation';
 import CustomerReviews from '../CustomerReviews';
 import Footer from '../Footer';
 import Header from '../Header';
@@ -26,7 +26,7 @@ function App() {
 			<Angebote />
 			<KryptoBlock />
 			<CustomerReviews />
-			<Consultant />
+			<Consultation />
 			<AbountUs />
 			<Footer />
 		</div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './index.module.css';
 
-export default function Consultantnpm() {
+export default function Consultation() {
 	return (
 		<section className={s.beratung_container} id="consultant">
 			<div className={['wrapper', s.beratung_block].join(' ')}>

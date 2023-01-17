@@ -1,42 +1,50 @@
 .about_us_section {
-	background-color: rgb(3, 3, 75);
-	color: white;
+	background-color: #131a32;
+	color: #ffffff;
 }
 
 .about_us_logo {
-	padding: 50px 0;
+	padding: 60px 0 32px 0;
 }
 
 .about_us_container {
-	display: grid;
-	grid-template-columns: repeat(3, auto);
-	gap: 50px;
+	display: flex;
+	justify-content: space-between;
 }
 
 .about_us_container p {
-	font-weight: 300;
-	font-size: 23px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	max-width: 440px;
+}
+
+.rf p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	max-width: 196px;
+	margin: 0 104px 0 162px;
 }
 
 .icons_block a {
-	color: white;
+	color: #ffffff;
 }
 
 .icons {
 	width: 25px;
 	height: 25px;
-	margin: 0 15px 0 0;
+	margin: 0 16px 0 0;
 }
 
 .phone {
 	width: 25px;
 	height: 25px;
-	margin: 0 15px 0 0;
+	margin: 0 16px 0 0;
 }
 
 .contacts {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
-	margin: 20px 0;
+	margin: 24px 0;
 }
