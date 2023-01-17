@@ -5,12 +5,12 @@
 
 .info_text h2 {
 	margin: 100px 0 30px 0;
-	font-weight: 600;
-	font-size: 48px;
+	font-weight: 700;
+	font-size: 36px;
 }
 
 .info_text p {
 	max-width: 380px;
-	font-weight: 300;
-	font-size: 22px;
+	font-weight: 500;
+	font-size: 19px;
 }

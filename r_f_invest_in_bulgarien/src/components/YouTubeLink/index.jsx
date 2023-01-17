@@ -13,8 +13,8 @@ export default function YouTubeLink() {
 			</div>
 
 			<iframe
-				width="760"
-				height="515"
+				width="670"
+				height="420"
 				src="https://www.youtube.com/embed/MeCWAFMu_XE"
 				title="YouTube video player"
 				// frameborder="0"
