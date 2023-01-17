@@ -11,7 +11,7 @@ export default function Touren({ setModal }) {
 
 				<div className={s.touren_block}>
 					<div>
-						<img src={touren} alt="" />
+						<img src={touren} alt="touren" />
 					</div>
 
 					<div>
@@ -24,7 +24,7 @@ export default function Touren({ setModal }) {
 							Ankunft in Bulgarien bis zu Ihrer Abreise für nur 250 -EUR
 						</p>
 
-						<Button onClick={() => console.log(setModal(true))}> Mehr</Button>
+						<Button onClick={() => setModal(true)}> Mehr</Button>
 					</div>
 				</div>
 			</div>
