@@ -1,11 +1,10 @@
 .button {
-	background-color: rgb(8, 8, 207);
+	background-color: #0957cb;
 	color: #ffff;
-	border: 1px solid rgb(8, 8, 207);
-	border-radius: 5px;
-	font-size: 16px;
+	border: 1px solid #0957cb;
+	border-radius: 6px;
 	cursor: pointer;
-	padding: 20px;
-	font-weight: 300;
-	font-size: 20.9px;
+	font-weight: 500;
+	font-size: 16px;
+	text-align: center;
 }

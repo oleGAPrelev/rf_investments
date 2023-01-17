@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import Button from '../../UI/Button';
 import s from './index.module.css';
-import logo from './media/buh_one_logo.png';
+import logo from './media/nav_logo.png';
 
 export default function Nav() {
 	return (
@@ -10,9 +10,8 @@ export default function Nav() {
 			<div className={['wrapper', s.nav_block].join(' ')}>
 				<img src={logo} alt="logo" />
 				<ul className={s.nav_menu}>
-					{/* <li>1 Andere Ländern</li> */}
 					<Link>1 Tour reservieren</Link>
-					{/* <li>2 Reservierung</li> */}
+
 					<Link
 						to="consultant"
 						spy={true}

@@ -2,8 +2,7 @@
 	background-image: url('media/background.png');
 	background-size: cover;
 	background-position: center;
-	color: white;
-	padding-bottom: 500px;
+	color: #ffffff;
 }
 
 .nav_block {
@@ -12,29 +11,40 @@
 	align-items: center;
 }
 
+.nav_block img {
+	margin-top: 24px;
+}
+
 .nav_menu {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
-	gap: 68px;
-	justify-content: space-between;
-	list-style: none;
-	text-transform: uppercase;
+	gap: 51px;
+	margin-top: 24px;
 }
 
 .nav_menu a {
 	cursor: pointer;
+	font-weight: 500;
+	font-size: 16px;
 }
 
 .nav_contacts h2 {
-	max-width: 450px;
-	font-weight: 300;
+	max-width: 520px;
+	font-family: 'DM Sans';
+	font-weight: 500;
 	font-size: 48px;
-	margin: 200px 0 50px 0;
+	margin: 138px 0 18px 0;
 }
 
 .nav_contacts p {
-	max-width: 450px;
-	font-weight: 200;
-	font-size: 22px;
-	margin-bottom: 50px;
+	max-width: 428px;
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 32px;
+}
+
+.nav_contacts button {
+	width: 170px;
+	height: 50px;
+	margin-bottom: 314px;
 }
