@@ -2,10 +2,10 @@ import { useState } from 'react';
 import AbountUs from '../AbountUs';
 import Angebote from '../Angebote';
 import Consultation from '../Consultation';
+import CryptoBlock from '../CryptoBlock';
 import CustomerReviews from '../CustomerReviews';
 import Footer from '../Footer';
 import Header from '../Header';
-import KryptoBlock from '../KryptoBlock';
 import Modal from '../Modal';
 import Nav from '../Nav';
 import Services from '../Services';
@@ -24,7 +24,7 @@ function App() {
 			<Touren setModal={setModal} />
 			<Modal modal={modal} setModal={setModal} />
 			<Angebote />
-			<KryptoBlock />
+			<CryptoBlock />
 			<CustomerReviews />
 			<Consultation />
 			<AbountUs />

@@ -4,7 +4,7 @@ import Button from '../../UI/Button';
 import bitcoin from './media/bitcoin.png';
 import s from './index.module.css';
 
-export default function KryptoBlock() {
+export default function CryptoBlock() {
 	return (
 		<section className={s.crypto_container}>
 			<div className={['wrapper', s.crypto_block].join(' ')}>
