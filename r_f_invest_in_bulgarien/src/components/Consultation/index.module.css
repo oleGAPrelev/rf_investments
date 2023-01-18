@@ -6,6 +6,12 @@
 	padding-bottom: 200px;
 }
 
+.beratung_block {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 173px;
+}
+
 .beratung_block h2 {
 	font-weight: 700;
 	font-size: 36px;

@@ -1,0 +1,21 @@
+.consultation_form {
+	color: #ffffff;
+	padding-top: 100px;
+}
+
+.daten_block p {
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 6px;
+}
+
+.daten_block input {
+	width: 332px;
+	height: 50px;
+}
+
+.consultation_form button {
+	margin-top: 20px;
+	width: 332px;
+	padding: 13px;
+}

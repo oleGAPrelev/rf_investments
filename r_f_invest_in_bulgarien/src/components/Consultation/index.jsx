@@ -1,4 +1,5 @@
 import React from 'react';
+import ConsultationForm from '../ConsultationForm';
 import s from './index.module.css';
 
 export default function Consultation() {
@@ -8,6 +9,10 @@ export default function Consultation() {
 				<div>
 					<h2>Brauchen Sie eine Beratung?</h2>
 					<p>Kontaktieren Sie uns und wir helfen Ihnen</p>
+				</div>
+
+				<div>
+					<ConsultationForm />
 				</div>
 			</div>
 		</section>
