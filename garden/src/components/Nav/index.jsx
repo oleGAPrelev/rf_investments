@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../../UI/Button';
 import s from './index.module.css';
 import logo from './media/garden_logo.png';
-import bag from './media/bag_nav.png';
+import { SlHandbag } from 'react-icons/sl';
 import { Link } from 'react-router-dom';
 
 export default function Nav() {
@@ -17,11 +17,13 @@ export default function Nav() {
 
 			<ul className={s.nav_menu}>
 				<Link to="/categories">Категории</Link>
-				<Link to="/coupon">Купон</Link>
+				<Link to="/coupon" spy={true} smooth={true} offset={50} duration={500}>
+					Купон
+				</Link>
 				<Link to="/stock">Акции</Link>
 				<Link to="/contacts">Контакты</Link>
 				<Link to="">
-					<img src={bag} alt="bag" />
+					<SlHandbag className={s.bad} />
 				</Link>
 			</ul>
 		</nav>
