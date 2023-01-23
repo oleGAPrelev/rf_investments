@@ -4,6 +4,8 @@ import s from './index.module.css';
 export default function BargainSale({ title, price, discont_price, image }) {
 	const img_style = image ?? '../../../media_products/not_images.png';
 
+	const discount = Math.round(((price - discont_price) / price) * 100);
+
 	return (
 		<div>
 			{discont_price === '' ? (
@@ -14,7 +16,7 @@ export default function BargainSale({ title, price, discont_price, image }) {
 					<div className={s.price_block}>
 						<p>{price} p</p>
 						<p>{discont_price}</p>
-						<p>{((price - discont_price) / price) * 100}%</p>
+						<p>{discount}%</p>
 					</div>
 					<div className={s.title_block}>
 						<p>{title}</p>
