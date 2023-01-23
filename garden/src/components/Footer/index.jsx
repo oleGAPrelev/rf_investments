@@ -1,21 +1,21 @@
 import React from 'react';
 import s from './index.module.css';
-import instagram from './media/instagram.png';
-import whats_app from './media/whats_app.png';
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { AiOutlineWhatsApp } from 'react-icons/ai';
 
 export default function Footer() {
 	return (
-		<div className={['wrapper', s.footer].join(' ')}>
+		<footer className={['wrapper', s.footer].join(' ')}>
 			<div className={s.contacts}>
 				<h2>Контакты</h2>
 				<p>+7 999 999 99 99</p>
 				<div className={s.networcs}>
 					<a href="#">
-						<img src={instagram} alt="instagram" />
+						<AiOutlineInstagram className={s.icons} />
 						<p>instagram</p>
 					</a>
 					<a href="#">
-						<img src={whats_app} alt="whats_app" />
+						<AiOutlineWhatsApp className={s.icons} />
 						<p>WhatsApp</p>
 					</a>
 				</div>
@@ -29,6 +29,6 @@ export default function Footer() {
 					Режим работы <span className={s.accent}>Круглосуточно</span>
 				</p>
 			</div>
-		</div>
+		</footer>
 	);
 }

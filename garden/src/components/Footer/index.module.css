@@ -5,11 +5,9 @@
 }
 
 .footer h2 {
-	margin: 0 25px;
+	margin-bottom: 25px;
 	font-weight: 700;
 	font-size: 40px;
-	line-height: 130%;
-	width: 600px;
 }
 
 .contacts p {
@@ -24,20 +22,26 @@
 	gap: 33px;
 	margin: 33px 0;
 }
+
+.networcs a {
+	color: #000000;
+	text-align: center;
+	text-decoration: none;
+}
+
 .networcs p {
 	font-weight: 600;
 	font-size: 15px;
-	line-height: 130%;
 }
 
-.networcs img {
-	margin: 13px;
+.icons {
+	width: 46px;
+	height: 46px;
 }
 
 .address p:nth-child(2) {
 	font-weight: 600;
 	font-size: 40px;
-	line-height: 130%;
 }
 
 .address span {
@@ -48,7 +52,6 @@
 	margin: 20px 0;
 	font-weight: 500;
 	font-size: 18px;
-	line-height: 130%;
 }
 
 .accent {
