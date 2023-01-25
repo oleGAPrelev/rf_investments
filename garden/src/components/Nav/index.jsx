@@ -17,11 +17,9 @@ export default function Nav() {
 
 			<ul className={s.nav_menu}>
 				<Link to="/categories">Категории</Link>
-				<Link to="/coupon" spy={true} smooth={true} offset={50} duration={500}>
-					Купон
-				</Link>
-				<Link to="/stock">Акции</Link>
-				<Link to="/contacts">Контакты</Link>
+				<Link to="coupon">Купон</Link>
+				<Link to="stock">Акции</Link>
+				<Link to="contacts">Контакты</Link>
 				<Link to="">
 					<SlHandbag className={s.bad} />
 				</Link>

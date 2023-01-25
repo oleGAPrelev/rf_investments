@@ -1,13 +1,11 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import s from './index.module.css';
 import BargainSale from '../BargainSale';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { Context } from '../../context';
 
 export default function BargainSaleContainer() {
-	const { products } = useContext(Context);
 	function SampleNextArrow(props) {
 		const { className, style, onClick } = props;
 		return (
@@ -53,9 +51,9 @@ export default function BargainSaleContainer() {
 		<div className={['wrapper', s.bargain_block].join(' ')}>
 			<h2>Акции</h2>
 			<Slider {...settings} className={s.info_bargain_block}>
-				{products.map((el) => (
+				{/* {products.map((el) => (
 					<BargainSale key={el.id} {...el} />
-				))}
+				))} */}
 			</Slider>
 		</div>
 	);

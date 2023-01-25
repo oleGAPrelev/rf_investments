@@ -1,4 +1,4 @@
-.all_catigories {
+.all_catigories h2 {
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 130%;
@@ -15,5 +15,11 @@
 .catigori button {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+}
+
+.category_card {
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
 }

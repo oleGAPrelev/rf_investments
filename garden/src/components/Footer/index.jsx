@@ -10,11 +10,11 @@ export default function Footer() {
 				<h2>Контакты</h2>
 				<p>+7 999 999 99 99</p>
 				<div className={s.networcs}>
-					<a href="#">
+					<a href="/">
 						<AiOutlineInstagram className={s.icons} />
 						<p>instagram</p>
 					</a>
-					<a href="#">
+					<a href="/">
 						<AiOutlineWhatsApp className={s.icons} />
 						<p>WhatsApp</p>
 					</a>
