@@ -1,0 +1,45 @@
+.range_container h1 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 48px;
+	margin-bottom: 80px;
+}
+
+.slick_bock {
+	text-align: center;
+}
+
+.block {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	margin: 0 auto;
+}
+
+.slick {
+	max-width: 350px;
+	filter: drop-shadow(0px 4px 20px rgba(52, 70, 131, 0.1));
+}
+
+.slick img {
+	object-fit: cover;
+	width: 370px;
+	height: 250px;
+}
+
+.price {
+	margin: 24px 20px;
+}
+
+.price h2 {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.price p {
+	color: #0957cb;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+}

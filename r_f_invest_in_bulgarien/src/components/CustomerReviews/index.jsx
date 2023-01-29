@@ -7,7 +7,7 @@ import hofman from './media/hofman.png';
 export default function CustomerReviews() {
 	return (
 		<div className={['wrapper', s.customer_container].join(' ')}>
-			<h2>Was unsere Kunden sagen über uns</h2>
+			<h1>Was unsere Kunden sagen über uns</h1>
 
 			<div className={s.images}>
 				<img src={seher} alt="seher" />

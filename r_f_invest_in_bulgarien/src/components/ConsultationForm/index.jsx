@@ -8,12 +8,12 @@ export default function ConsultationForm() {
 		<form className={s.consultation_form}>
 			<div className={s.daten_block}>
 				<label>
-					<p>Telefonnummer</p>
+					<p>Vorname, Nachname</p>
 					<Input />
 				</label>
 
 				<label>
-					<p>E-Mail-Adresse</p>
+					<p>Telefonnummer</p>
 					<Input />
 				</label>
 			</div>

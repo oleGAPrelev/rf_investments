@@ -4,7 +4,7 @@
 	margin: 100px auto;
 }
 
-.touren_h h2 {
+.touren_h h1 {
 	text-align: center;
 	margin-bottom: 80px;
 	font-weight: 700;
@@ -24,7 +24,7 @@
 	border-radius: 10px;
 }
 
-.touren_block h3 {
+.touren_block h2 {
 	font-weight: 700;
 	font-size: 36px;
 	max-width: 430px;
