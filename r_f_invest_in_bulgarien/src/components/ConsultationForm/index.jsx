@@ -12,8 +12,30 @@ export default function ConsultationForm() {
     reset
   } = useForm({mode: 'onBlur'});
   
+  // const formHandleSubmit = (data) => {
+  //   console.log(JSON.stringify(data));
+  //
+  //   reset();
+  // }
+  //    {"name":"54325432","phone":"gfsgf"}
+  
   const formHandleSubmit = (data) => {
-    console.log(JSON.stringify(data));
+    fetch('http://localhost:3002/send', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    })
+      .then((response) => (response.json()))
+      .then((response) => {
+        if (response.status === 'success') {
+          alert('Message Sent.');
+        } else if (response.status === 'fail') {
+          alert('Message failed to send.')
+        }
+      });
     reset();
   }
   
