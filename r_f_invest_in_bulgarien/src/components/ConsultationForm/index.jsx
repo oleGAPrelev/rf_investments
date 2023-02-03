@@ -12,13 +12,6 @@ export default function ConsultationForm() {
     reset
   } = useForm({mode: 'onBlur'});
   
-  // const formHandleSubmit = (data) => {
-  //   console.log(JSON.stringify(data));
-  //
-  //   reset();
-  // }
-  //    {"name":"54325432","phone":"gfsgf"}
-  
   const formHandleSubmit = (data) => {
     fetch('http://localhost:3002/send', {
       method: 'POST',
