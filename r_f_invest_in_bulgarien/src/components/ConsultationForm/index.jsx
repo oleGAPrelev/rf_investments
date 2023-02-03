@@ -3,7 +3,6 @@ import {useForm} from 'react-hook-form';
 import Button from '../../UI/Button';
 import Input from '../../UI/Input';
 import s from './index.module.css';
-
 export default function ConsultationForm() {
   const {
     register,
