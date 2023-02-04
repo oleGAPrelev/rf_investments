@@ -15,12 +15,6 @@
 	margin-top: 24px;
 }
 
-.nav_menu {
-	display: flex;
-	justify-content: end;
-	margin-top: 24px;
-}
-
 .nav_menu a {
 	cursor: pointer;
 	font-weight: 500;
