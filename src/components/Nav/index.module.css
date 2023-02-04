@@ -16,9 +16,8 @@
 }
 
 .nav_menu {
-	display: grid;
-	grid-template-columns: repeat(2, auto);
-	gap: 51px;
+	display: flex;
+	justify-content: end;
 	margin-top: 24px;
 }
 

@@ -10,8 +10,6 @@ export default function Nav() {
 			<div className={['wrapper', s.nav_block].join(' ')}>
 				<img src={logo} alt="logo" />
 				<ul className={s.nav_menu}>
-					<Link>1 Tour reservieren</Link>
-
 					<Link
 						to="consultant"
 						spy={true}
