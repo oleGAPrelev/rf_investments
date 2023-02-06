@@ -15,6 +15,8 @@ import YouTubeLink from '../YouTubeLink';
 function App() {
 	const [modal, setModal] = useState(false);
 
+	document.body.style.overflow = modal ? 'hidden' : 'auto';
+
 	return (
 		<div>
 			<Header />
@@ -28,7 +30,7 @@ function App() {
 			<CustomerReviews />
 			<Consultation />
 			<AbountUs />
-			<Footer />
+			<Footer setModal={setModal} />
 		</div>
 	);
 }
