@@ -6,7 +6,7 @@ import video from './Video/video_bg.mp4';
 export default function Consultation() {
 	return (
 		<section className={s.consultation_container} id="consultant">
-			<video src={video} autoplay="start" muted loop></video>
+			<video src={video} autoPlay="start" muted loop></video>
 			<div className={s.effect}>
 				<div className={['wrapper', s.consultation_block].join(' ')}>
 					<div className={s.consultation_text}>
