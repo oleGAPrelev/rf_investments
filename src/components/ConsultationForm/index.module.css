@@ -19,3 +19,14 @@
 	width: 332px;
 	padding: 13px;
 }
+
+.error {
+	background-color: crimson;
+	opacity: 0;
+	animation: ani 0.5s forwards;
+}
+
+@keyframes ani {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}

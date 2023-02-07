@@ -19,11 +19,11 @@
 	display: flex;
 	gap: 52px;
 	list-style: none;
-	/* text-transform: uppercase; */
 	font-weight: 500;
 	font-size: 16px;
 }
 
-.nav_menu li {
-	cursor: pointer;
+.nav_menu a {
+	text-decoration: none;
+	color: #ffffff;
 }
