@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Button from '../../UI/Button';
 import s from './index.module.css';
 import touren from './media/touren_img.png';
@@ -24,7 +25,9 @@ export default function Touren({ setModal }) {
 							Ankunft in Bulgarien bis zu Ihrer Abreise für nur 250 -EUR
 						</p>
 
-						<Button onClick={() => setModal(true)}> Mehr</Button>
+						<Link to="mehr_info">
+							<Button onClick={() => setModal(true)}> Mehr</Button>
+						</Link>
 					</div>
 				</div>
 			</div>
