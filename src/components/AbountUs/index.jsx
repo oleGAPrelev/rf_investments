@@ -4,8 +4,13 @@ import logo from './media/nav_logo.png';
 import { FaPhoneAlt, FaFacebookF } from 'react-icons/fa';
 import { CiYoutube } from 'react-icons/ci';
 import { AiOutlineInstagram } from 'react-icons/ai';
+import { MapContainer, TileLayer, Marker, Popup, } from "react-leaflet";
+
+const { REACT_APP_MAPBOX_USERNAME, REACT_APP_MAPBOX_STYLE_ID, REACT_APP_MAPBOX_ACCESS_TOKEN } = process.env;
 
 export default function AbountUs() {
+	const position = [51.505, -0.09];
+
 	return (
 		<section className={s.about_us_section}>
 			<div className="wrapper">
@@ -16,16 +21,20 @@ export default function AbountUs() {
 				<div className={s.about_us_container}>
 					<div>
 						<p>
-							Die RF Investments ist ein europaweit tätiger, auf die
-							Wohnimmobilienwirtschaft spezialisierte Unternehmen. Der
-							Tätigkeitsschwerpunkt liegt im Verkauf und Vermietung von
-							Immobilienobjekten auf gefragten Urlaubsorten. Mit ihrem Angebot
-							realisiert die RF Investments Potentiale sowohl für private
-							Kapitalanleger als auch für Selbstnutzer. Unsere kompetente
-							Mitarbeiter organisieren den Kauf und begleiten die ganzen
-							Prozesse bis zum Schlüsselübergabe von ihrer Traumimmobilie.
+							<MapContainer
+								center={position}
+								zoom={4.5}
+								scrollWheelZoom={true}
+								style={{ minHeight: "400px", minWidth: "600px" }}
+							>
+								<TileLayer
+									url='https://api.mapbox.com/styles/v1/rfinvest/cldxmgsjj004q01padn7qd7q3/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicmZpbnZlc3QiLCJhIjoiY2xkeG1hcDNiMGZ6cjNxb2FmbmR2OHc2ciJ9.EGri_5kPtzXOzl4O4_6zLw'
+									attribution="Map data &copy; <a href=&quot;https://www.openstreetmap.org/&quot;>OpenStreetMap</a> contributors, <a href=&quot;https://creativecommons.org/licenses/by-sa/2.0/&quot;>CC-BY-SA</a>, Imagery &copy; <a href=&quot;https://www.mapbox.com/&quot;>Mapbox</a>"
+								/>
+							</MapContainer>
 						</p>
 					</div>
+
 
 					<div className={s.rf}>
 						<p> R&F INVESTMENS OOD </p>
