@@ -1,9 +1,7 @@
 import React from 'react';
 import s from './index.module.css';
-import Socials from '../Socials';
-import { FaPhoneAlt, FaFacebookF } from 'react-icons/fa';
-// import { CiYoutube } from 'react-icons/ci';
-// import { AiOutlineInstagram } from 'react-icons/ai';
+import Socials from '../../UI/Socials';
+import { FaPhoneAlt } from 'react-icons/fa';
 
 export default function Header() {
   return (

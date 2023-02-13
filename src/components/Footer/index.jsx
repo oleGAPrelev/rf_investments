@@ -1,29 +1,41 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import Logo from '../../UI/Logo';
+// import Address from './FooterComponents/Address';
+// import Map from './FooterComponents/Map';
+// import Socials from '../../UI/Socials';
+// import PhoneContacts from './FooterComponents/PhoneContacts';
+// import FooterNav from './FooterComponents/FooterNav';
+import useMediaQuery from '../../hooks/useMediaQuery';
+import MobileTabletView from './MobileTabletView';
+import DesktopView from './DesktopView';
 import s from './index.module.css';
 
 export default function Footer({ setModal }) {
-	return (
-		<footer className={s.footer}>
-			<div className={['wrapper', s.footer_container].join(' ')}>
-				<div>
-					<p>R&F INVESTMENS</p>
-				</div>
+  const isDesktop = useMediaQuery('(min-width: 768px)');
 
-				<div>
-					<ul className={s.nav_menu}>
-						<Link to="datenschutz" onClick={() => setModal(true)}>
-							Datenschutz
-						</Link>
-						<Link to="impressum" onClick={() => setModal(true)}>
-							Impressum
-						</Link>
-						<Link to="cookie" onClick={() => setModal(true)}>
-							Cookie-Einstellungen
-						</Link>
-					</ul>
-				</div>
-			</div>
-		</footer>
-	);
+  return (
+    <footer className={s.footer}>
+      {isDesktop ? (
+        <DesktopView setModal={setModal} />
+      ) : (
+        <MobileTabletView setModal={setModal} />
+      )}
+
+      {/* <div className={s.footer_logo_address_wrapper}>
+          <Logo />
+          <Address />
+        </div>
+
+        <div className={s.footer_map_wrapper}>
+          <Map />
+        </div>
+
+        <div className={s.footer_socials_phones_wrapper}>
+          <Socials placement='footer' />
+          <PhoneContacts />
+        </div>
+
+        <FooterNav setModal={setModal} /> */}
+    </footer>
+  );
 }

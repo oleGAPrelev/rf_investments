@@ -1,18 +1,13 @@
-.about_us_section {
+/* .about_us_section {
   background-color: #131a32;
   color: #ffffff;
-}
+} */
 
-.about_us_sections {
-  background-color: #131a32;
-  color: #ffffff;
-}
-
-.about_us_logo {
+/* .about_us_logo {
   padding: 60px 0 32px 0;
-}
+} */
 
-.about_us_container {
+/* .about_us_container {
   display: flex;
   justify-content: space-between;
 }
@@ -22,27 +17,23 @@
   font-size: 16px;
   line-height: 24px;
   max-width: 440px;
-}
+} */
 
-.rf p {
+/* .rf p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   max-width: 196px;
   margin: 0 104px 0 162px;
-}
+} */
 
-.icons_block a {
-  color: #ffffff;
-}
-
-.icons {
+/* .icons {
   width: 25px;
   height: 25px;
   margin: 0 16px 0 0;
-}
+} */
 
-.phone {
+/* .phone {
   width: 25px;
   height: 25px;
   margin: 0 16px 0 0;
@@ -52,9 +43,9 @@
   display: flex;
   align-items: center;
   margin: 24px 0;
-}
+} */
 
-.mapbox_logo {
+/* .mapbox_logo {
   cursor: pointer;
   z-index: 450;
   position: absolute;
@@ -72,4 +63,4 @@
 .popup_img {
   width: 100%;
   height: 100%;
-}
+} */

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import Button from '../../UI/Button';
 import s from './index.module.css';
-import Logo from '../Logo';
+import Logo from '../../UI/Logo';
 
 export default function Nav() {
   return (
