@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './index.module.css';
 import logo from './media/nav_logo.png';
+import Socials from '../Socials';
 import { FaPhoneAlt, FaFacebookF } from 'react-icons/fa';
 import { CiYoutube } from 'react-icons/ci';
 import { AiOutlineInstagram } from 'react-icons/ai';
@@ -45,7 +46,7 @@ export default function AboutUs() {
               center={mapCenterPosition}
               zoom={6}
               scrollWheelZoom={true}
-              style={{ minHeight: '400px', minWidth: '900px' }}
+              style={{ minHeight: '400px', minWidth: '360px' }}
             >
               <TileLayer
                 url='https://api.mapbox.com/styles/v1/rfinvest/cldxmgsjj004q01padn7qd7q3/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicmZpbnZlc3QiLCJhIjoiY2xkeG1hcDNiMGZ6cjNxb2FmbmR2OHc2ciJ9.EGri_5kPtzXOzl4O4_6zLw'
@@ -91,7 +92,9 @@ export default function AboutUs() {
             <p> 8240 Nesebar, Bulgarien </p>
           </div>
 
-          <div>
+          <Socials placement='footer' />
+
+          {/* <div>
             <div className={s.icons_block}>
               <base target='_blank' />
               <a href='/'>
@@ -103,22 +106,22 @@ export default function AboutUs() {
               <a href='https://www.instagram.com/rf_investpro_eu/?igshid=YmMyMTA2M2Y%3D'>
                 <AiOutlineInstagram className={s.icons} />
               </a>
+            </div> */}
+
+          <div>
+            <div className={s.contacts}>
+              <FaPhoneAlt className={s.phone} />
+              <p>Anton Fuchs +49 176 10175414</p>
             </div>
 
-            <div>
-              <div className={s.contacts}>
-                <FaPhoneAlt className={s.phone} />
-                <p>Anton Fuchs +49 176 10175414</p>
-              </div>
-
-              <div className={s.contacts}>
-                <FaPhoneAlt className={s.phone} />
-                <p>Artur Runge +49 176 24672123</p>
-              </div>
+            <div className={s.contacts}>
+              <FaPhoneAlt className={s.phone} />
+              <p>Artur Runge +49 176 24672123</p>
             </div>
           </div>
         </div>
       </div>
+      {/* </div> */}
     </section>
   );
 }
