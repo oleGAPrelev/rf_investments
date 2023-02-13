@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import AbountUs from '../AbountUs';
+import AboutUs from '../AboutUs';
 import Consultation from '../Consultation';
 import CryptoBlock from '../CryptoBlock';
 import CustomerReviews from '../CustomerReviews';
@@ -13,26 +13,26 @@ import Touren from '../Touren';
 import YouTubeLink from '../YouTubeLink';
 
 function App() {
-	const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState(false);
 
-	document.body.style.overflow = modal ? 'hidden' : 'auto';
+  document.body.style.overflow = modal ? 'hidden' : 'auto';
 
-	return (
-		<div>
-			<Header />
-			<Nav />
-			<Services />
-			<YouTubeLink />
-			<Touren setModal={setModal} />
-			<Modal modal={modal} setModal={setModal} />
-			<Range />
-			<CryptoBlock />
-			<CustomerReviews />
-			<Consultation />
-			<AbountUs />
-			<Footer setModal={setModal} />
-		</div>
-	);
+  return (
+    <div>
+      <Header />
+      <Nav />
+      <Services />
+      <YouTubeLink />
+      <Touren setModal={setModal} />
+      <Modal modal={modal} setModal={setModal} />
+      <Range />
+      <CryptoBlock />
+      <CustomerReviews />
+      <Consultation />
+      <AboutUs />
+      <Footer setModal={setModal} />
+    </div>
+  );
 }
 
 export default App;
