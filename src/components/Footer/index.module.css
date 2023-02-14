@@ -2,6 +2,8 @@
 tablet 768px 
 desktop 1200px */
 
+/* footer & footer_container */
+
 .footer {
   background-color: #131a32;
   color: #ffffff;
@@ -21,41 +23,21 @@ desktop 1200px */
   }
 }
 
+/* address & phones */
+
 .footer_logo_address_wrapper,
 .footer_socials_phones_wrapper {
   padding-left: 30px;
   padding-right: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer_logo_address_wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 36px;
   }
-}
-
-.footer_socials_phones_wrapper {
-  margin-bottom: 40px;
-}
-
-.footer_map_wrapper {
-  margin-bottom: 36px;
-}
-
-@media (min-width: 768px) {
-  .footer_map_wrapper {
-    /* min-width: 768px; */
-    width: 960px;
-    margin-bottom: 0px;
-    padding: 30px;
-    background-color: #131a32;
-  }
-}
-
-.footer_desktop_content_wrapper {
-  padding: 40px 0px;
 }
 
 .footer_address {
@@ -67,6 +49,39 @@ desktop 1200px */
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.phone {
+  width: 25px;
+  height: 25px;
+  margin: 0 16px 0 0;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+}
+
+/* socials */
+
+.footer_socials_phones_wrapper {
+  margin-bottom: 40px;
+}
+
+/* map */
+
+.footer_map_wrapper {
+  margin-bottom: 36px;
+}
+
+@media (min-width: 768px) {
+  .footer_map_wrapper {
+    width: 75%;
+    margin-bottom: 0px;
+    padding: 30px;
+    background-color: #131a32;
+  }
 }
 
 .mapbox_logo {
@@ -89,17 +104,7 @@ desktop 1200px */
   height: 100%;
 }
 
-.phone {
-  width: 25px;
-  height: 25px;
-  margin: 0 16px 0 0;
-}
-
-.contacts {
-  display: flex;
-  align-items: center;
-  margin: 24px 0;
-}
+/* footer navigation */
 
 .nav_menu {
   display: flex;
@@ -115,4 +120,10 @@ desktop 1200px */
 .nav_menu a {
   text-decoration: none;
   color: #ffffff;
+}
+
+/* wrapper for positioning on desktop */
+
+.footer_desktop_content_wrapper {
+  padding: 40px 0px;
 }
