@@ -1,39 +1,29 @@
 .header_container {
-	background-color: #131a32;
+  background-color: #131a32;
 }
 
 .header_block {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 50px;
-	color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  color: white;
 }
 
 .contacts {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .contacts p {
-	margin: 0 16px;
-	font-weight: 400;
-	font-size: 14px;
+  margin: 0 16px;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .phone {
-	color: #0957cb;
-	width: 20px;
-	height: 20px;
-}
-
-.icons_block a {
-	color: #ffffff;
-}
-
-.icons {
-	width: 20px;
-	height: 20px;
-	margin-left: 15px;
+  color: #0957cb;
+  width: 20px;
+  height: 20px;
 }

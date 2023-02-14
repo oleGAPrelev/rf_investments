@@ -1,43 +1,43 @@
 .nav_container {
-	background-image: url('media/background.png');
-	background-size: cover;
-	background-position: center;
-	color: #ffffff;
+  background-image: url('media/background.png');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
 }
 
 .nav_block {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav_block img {
-	margin-top: 24px;
+.nav_block svg {
+  margin-top: 24px;
 }
 
 .nav_menu a {
-	cursor: pointer;
-	font-weight: 500;
-	font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .nav_contacts h2 {
-	max-width: 520px;
-	font-family: 'DM Sans';
-	font-weight: 500;
-	font-size: 48px;
-	margin: 138px 0 18px 0;
+  max-width: 520px;
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 48px;
+  margin: 138px 0 18px 0;
 }
 
 .nav_contacts p {
-	max-width: 428px;
-	font-weight: 500;
-	font-size: 18px;
-	margin-bottom: 32px;
+  max-width: 428px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 32px;
 }
 
 .nav_contacts button {
-	width: 170px;
-	height: 50px;
-	margin-bottom: 314px;
+  width: 170px;
+  height: 50px;
+  margin-bottom: 314px;
 }
