@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import AboutUs from '../AboutUs';
 import Consultation from '../Consultation';
 import CryptoBlock from '../CryptoBlock';
 import CustomerReviews from '../CustomerReviews';
@@ -29,7 +28,6 @@ function App() {
       <CryptoBlock />
       <CustomerReviews />
       <Consultation />
-      <AboutUs />
       <Footer setModal={setModal} />
     </div>
   );
