@@ -13,6 +13,7 @@ export default function Range() {
     autoplay: true,
     autoplaySpeed: 2500,
     pauseOnHover: false,
+    arrows: false,
   };
   
   return (
