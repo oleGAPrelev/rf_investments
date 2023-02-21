@@ -1,70 +1,43 @@
-// eslint-disable-next-line
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 import L from 'leaflet';
 import s from '../index.module.css';
+import {offices} from '../../../data/offices';
 
 const {
-  // eslint-disable-next-line
-  REACT_APP_MAPBOX_USERNAME,
-  // eslint-disable-next-line
-  REACT_APP_MAPBOX_STYLE_ID,
-  // eslint-disable-next-line
   REACT_APP_MAPBOX_ACCESS_TOKEN,
+  REACT_APP_MAPBOX_USERNAME,
+  REACT_APP_MAPBOX_STYLE_ID,
 } = process.env;
 
 export default function Map() {
   const mapCenterPosition = [49.486, 10.096];
-  const positionM = [48.149, 11.573];
-  const testPosition = [48.456, 9.125];
-
-  const originalIcon = L.icon({
-    iconUrl: '/media/rf_logo.svg',
-    iconSize: [35, 39], // size of the icon
-    iconAnchor: [17, 19], // point of the icon which will correspond to marker's location
-    popupAnchor: [0, -20], // point from which the popup should open relative to the iconAnchor
-  });
-
   const mapIcon = L.icon({
-    iconUrl: '/media/maps_logo.svg',
-    iconSize: [27, 30], // size of the icon
-    iconAnchor: [13, 15], // point of the icon which will correspond to marker's location
-    popupAnchor: [0, -15], // point from which the popup should open relative to the iconAnchor
+    iconUrl: '/media/map-logo.svg',
+    iconSize: [35, 35],
+    iconAnchor: [17, 17],
+    popupAnchor: [0, -17],
   });
+  
   return (
     <MapContainer
       center={mapCenterPosition}
       zoom={6}
       scrollWheelZoom={true}
-      style={{ height: '100%', minHeight: '400px', width: '100%' }}
+      style={{height: '100%', minHeight: '400px', width: '100%'}}
     >
       <TileLayer
-        url='https://api.mapbox.com/styles/v1/rfinvest/cldxmgsjj004q01padn7qd7q3/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoicmZpbnZlc3QiLCJhIjoiY2xkeG1hcDNiMGZ6cjNxb2FmbmR2OHc2ciJ9.EGri_5kPtzXOzl4O4_6zLw'
+        url={`https://api.mapbox.com/styles/v1/${REACT_APP_MAPBOX_USERNAME}/${REACT_APP_MAPBOX_STYLE_ID}/tiles/256/{z}/{x}/{y}@2x?access_token=${REACT_APP_MAPBOX_ACCESS_TOKEN}`}
         attribution='&copy; <a href="https://www.mapbox.com/about/maps/">Mapbox</a> &copy; <a href="http://www.openstreetmap.org/about/">OpenStreetMap</a> <b><a href="https://www.mapbox.com/map-feedback/">Improve this map</a></b>'
+        accessToken={REACT_APP_MAPBOX_ACCESS_TOKEN}
       />
-      <Marker position={positionM} icon={originalIcon}>
-        <Popup>
-          <img
-            className={s.popup_img}
-            src='/media/office.jpg'
-            alt='Our office in Dresden'
-          />
-          Unser schönes Büro in München <br />
-          Rindermarkt 7, 80331 München
-        </Popup>
-      </Marker>
-
-      <Marker position={testPosition} icon={mapIcon}>
-        <Popup>
-          <img
-            className={s.popup_img}
-            src='/media/office.jpg'
-            alt='Our office in Dresden'
-          />
-          Unser schönes Büro in München <br />
-          Rindermarkt 7, 80331 München
-        </Popup>
-      </Marker>
-
+      {offices.map((office) => (
+        <Marker key={office.id} position={office.location} icon={mapIcon}>
+          <Popup>
+            <img src={office.image} className={s.popup_img} alt={office.title}/>
+            <b>{office.title}</b><br/><a href={`tel:${office.contact}`}>{office.contact}</a>
+          </Popup>
+        </Marker>
+      ))}
       <a
         href={'https://www.mapbox.com/about/maps/'}
         target={'_blank'}
