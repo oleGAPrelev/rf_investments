@@ -17,7 +17,7 @@ function App() {
   document.body.style.overflow = modal ? 'hidden' : 'auto';
 
   return (
-    <div>
+    <>
       <Header />
       <Nav />
       <Services />
@@ -29,7 +29,7 @@ function App() {
       <CustomerReviews />
       <Consultation />
       <Footer setModal={setModal} />
-    </div>
+    </>
   );
 }
 

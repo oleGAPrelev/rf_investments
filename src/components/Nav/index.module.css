@@ -1,18 +1,33 @@
-.nav_container {
+.nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-image: url('media/background.png');
   background-size: cover;
   background-position: center;
   color: #ffffff;
+  animation: image 10s infinite alternate;
+}
+
+@keyframes image {
+  0% {
+    background-image: url('media/background.png');
+  }
+  100% {
+    background-image: url('media/day-image.jpg');
+  }
 }
 
 .nav_block {
+  margin-bottom: 138px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav_block svg {
-  margin-top: 24px;
+@media screen and (min-width: 1200px) {
+  .nav_block {
+    margin-bottom: 200px;
+  }
 }
 
 .nav_menu a {
@@ -25,19 +40,37 @@
   max-width: 520px;
   font-family: 'DM Sans';
   font-weight: 500;
-  font-size: 48px;
-  margin: 138px 0 18px 0;
+  font-size: 40px;
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 480px) {
+  .nav_contacts h2 {
+    font-size: 48px;
+  }
 }
 
 .nav_contacts p {
   max-width: 428px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 32px;
+}
+
+@media screen and (min-width: 480px) {
+  .nav_contacts p {
+    font-size: 18px;
+  }
 }
 
 .nav_contacts button {
   width: 170px;
   height: 50px;
-  margin-bottom: 314px;
+  margin-bottom: 138px;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav_contacts button {
+    margin-bottom: 200px;
+  }
 }
