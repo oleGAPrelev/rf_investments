@@ -12,29 +12,19 @@
   }
 }
 
-/* .slick_bock {
-  text-align: center;
-} */
-
 .range_block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  margin: 0 auto; */
 }
 
-/* @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .range_block {
-    /* flex-direction: row; */
-/* display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
     gap: 30px;
-    margin: 0 auto;
-  } */
+  }
+}
 
 .range_block_slick {
   max-width: 350px;
