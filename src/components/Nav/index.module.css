@@ -5,13 +5,14 @@
   background-size: cover;
   background-position: center;
   color: #ffffff;
-  animation: image 10s infinite alternate;
+  animation: image 10s ease-in-out infinite alternate;
 }
 
 @keyframes image {
   0% {
     background-image: url('media/background.png');
   }
+
   100% {
     background-image: url('media/day-image.jpg');
   }
@@ -36,17 +37,17 @@
   font-size: 16px;
 }
 
-.nav_contacts h2 {
+.nav_contacts h1 {
   max-width: 520px;
   font-family: 'DM Sans';
   font-weight: 500;
-  font-size: 40px;
+  font-size: 48px;
   margin-bottom: 18px;
 }
 
 @media screen and (min-width: 480px) {
-  .nav_contacts h2 {
-    font-size: 48px;
+  .nav_contacts h1 {
+    font-size: 60px;
   }
 }
 

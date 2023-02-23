@@ -23,7 +23,7 @@ export default function Nav() {
           </ul>
         </div>
         <div className={s.nav_contacts}>
-          <h2>Träumen Sie von eine Immobilie am Meer?</h2>
+          <h1>Träumen Sie von eine Immobilie am Meer?</h1>
           <p>
             Wenden Sie sich an uns und unsere Qualifizierte Mitarbeiter finden
             für Sie eine Losung!

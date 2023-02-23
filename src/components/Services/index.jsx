@@ -8,7 +8,7 @@ import { SlHome } from 'react-icons/sl';
 
 export default function Services() {
   return (
-    <section className={s.services}>
+    <section className='section'>
       <div className={['container', s.services_container].join(' ')}>
         <h2>
           <span className={s.accent}>R & F Investmets</span> in Bulgarien
