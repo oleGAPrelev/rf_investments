@@ -1,5 +1,5 @@
 .reviews_title {
-  margin-bottom: 68px;
+  margin-bottom: 60px;
   text-align: center;
   font-weight: 700;
   font-size: 40px;
@@ -7,7 +7,6 @@
 
 @media screen and (min-width: 480px) {
   .reviews_title {
-    margin-bottom: 80px;
     font-size: 48px;
   }
 }

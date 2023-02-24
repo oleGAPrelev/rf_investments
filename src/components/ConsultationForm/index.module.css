@@ -1,32 +1,56 @@
 .consultation_form {
-	color: #ffffff;
-	padding-top: 100px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .consultation_form {
+    width: 332px;
+  }
 }
 
 .daten_block p {
-	font-weight: 400;
-	font-size: 16px;
-	margin-bottom: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 6px;
 }
 
 .daten_block input {
-	width: 332px;
-	height: 50px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 480px) {
+  .daten_block input {
+    width: 332px;
+    margin-bottom: 36px;
+  }
 }
 
 .consultation_form button {
-	margin-top: 20px;
-	width: 332px;
-	padding: 13px;
+  margin-top: 20px;
+
+  padding: 13px;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .consultation_form button {
+    width: 332px;
+  }
 }
 
 .error {
-	background-color: crimson;
-	opacity: 0;
-	animation: ani 0.5s forwards;
+  background-color: crimson;
+  opacity: 0;
+  animation: ani 0.5s forwards;
 }
 
 @keyframes ani {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
