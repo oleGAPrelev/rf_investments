@@ -1,32 +1,34 @@
-.impressum {
-	color: #0957cb;
+.impressum h1,
+.impressum h2,
+.impressum h3 {
+  color: #0957cb;
+  line-height: 1.2;
 }
 
 .impressum h1 {
-	font-weight: 700;
-	font-size: 48px;
-	line-height: 62px;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 36px;
 }
 
 .impressum h2 {
-	margin-top: 15px;
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 47px;
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .impressum h3 {
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 27px;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .impressum p {
-	font-weight: 500;
-	font-size: 19px;
-	line-height: 27px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 .impressum div {
-	margin: 10px 0;
+  margin: 10px 0;
 }

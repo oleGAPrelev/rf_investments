@@ -6,10 +6,28 @@ import Logo from '../../UI/Logo';
 
 export default function Nav() {
   return (
-    <nav className={s.nav_container}>
-      <div className={['wrapper', s.nav_block].join(' ')}>
-        <Logo />
-        <ul className={s.nav_menu}>
+    <section className={s.nav}>
+      <div className='container'>
+        <div className={s.nav_block}>
+          <Logo />
+          <ul className={s.nav_menu}>
+            <Link
+              to='consultant'
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+            >
+              Kontakt
+            </Link>
+          </ul>
+        </div>
+        <div className={s.nav_contacts}>
+          <h1>Träumen Sie von eine Immobilie am Meer?</h1>
+          <p>
+            Wenden Sie sich an uns und unsere Qualifizierte Mitarbeiter finden
+            für Sie eine Losung!
+          </p>
           <Link
             to='consultant'
             spy={true}
@@ -17,26 +35,10 @@ export default function Nav() {
             offset={50}
             duration={500}
           >
-            Kontakt
+            <Button> Kontaktiere Uns</Button>
           </Link>
-        </ul>
+        </div>
       </div>
-      <div className={['wrapper', s.nav_contacts].join(' ')}>
-        <h2>Träumen Sie von eine Immobilie am Meer?</h2>
-        <p>
-          Wenden Sie sich an uns und unsere Qualifizierte Mitarbeiter finden für
-          Sie eine Losung!
-        </p>
-        <Link
-          to='consultant'
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-        >
-          <Button> Kontaktiere Uns</Button>
-        </Link>
-      </div>
-    </nav>
+    </section>
   );
 }
