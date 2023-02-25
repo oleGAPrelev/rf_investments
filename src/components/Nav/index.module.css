@@ -19,15 +19,21 @@
 }
 
 .nav_block {
-  margin-bottom: 138px;
+  margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .nav_block {
+    margin-bottom: 100px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .nav_block {
-    margin-bottom: 200px;
+    margin-bottom: 120px;
   }
 }
 
@@ -67,11 +73,17 @@
 .nav_contacts button {
   width: 170px;
   height: 50px;
-  margin-bottom: 138px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav_contacts button {
+    margin-bottom: 80px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .nav_contacts button {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 }
