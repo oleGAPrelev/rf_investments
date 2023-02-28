@@ -1,18 +1,40 @@
-.nav_container {
+.nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-image: url('media/background.png');
   background-size: cover;
   background-position: center;
   color: #ffffff;
+  animation: image 10s ease-in-out infinite alternate;
+}
+
+@keyframes image {
+  0% {
+    background-image: url('media/background.png');
+  }
+
+  100% {
+    background-image: url('media/day-image.jpg');
+  }
 }
 
 .nav_block {
+  margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav_block svg {
-  margin-top: 24px;
+@media screen and (min-width: 768px) {
+  .nav_block {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav_block {
+    margin-bottom: 120px;
+  }
 }
 
 .nav_menu a {
@@ -21,23 +43,47 @@
   font-size: 16px;
 }
 
-.nav_contacts h2 {
+.nav_contacts h1 {
   max-width: 520px;
   font-family: 'DM Sans';
   font-weight: 500;
   font-size: 48px;
-  margin: 138px 0 18px 0;
+  margin-bottom: 18px;
+}
+
+@media screen and (min-width: 480px) {
+  .nav_contacts h1 {
+    font-size: 60px;
+  }
 }
 
 .nav_contacts p {
   max-width: 428px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 32px;
+}
+
+@media screen and (min-width: 480px) {
+  .nav_contacts p {
+    font-size: 18px;
+  }
 }
 
 .nav_contacts button {
   width: 170px;
   height: 50px;
-  margin-bottom: 314px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav_contacts button {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav_contacts button {
+    margin-bottom: 100px;
+  }
 }

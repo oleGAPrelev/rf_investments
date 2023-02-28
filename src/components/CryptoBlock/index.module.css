@@ -1,37 +1,77 @@
-.crypto_container {
-	background-color: #000040;
-	margin-top: 100px;
+.crypto_section {
+  background-color: #000040;
+  background-image: url(./media/bitcoin.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 480px) {
+  .crypto_section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .crypto_section {
+    background-image: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .crypto_block {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	color: #ffffff;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .crypto_block {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .crypto_block h2 {
-	font-weight: 700;
-	font-size: 36px;
-	margin-top: 92px;
-	max-width: 470px;
+  margin-bottom: 68px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 480px) {
+  .crypto_block h2 {
+    margin-bottom: 80px;
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .crypto_block h2 {
+    margin-top: 60px;
+  }
 }
 
 .crypto_block p {
-	font-weight: 400;
-	font-size: 16px;
-	text-align: justify;
-	color: #8a8d97;
-	max-width: 430px;
-	margin: 32px 0;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+  max-width: 430px;
+  margin: 32px 0;
 }
 
 .crypto_block button {
-	padding: 12px 46px;
-	margin-bottom: 90px;
+  padding: 12px 46px;
 }
 
 .crypto_block img {
-	object-fit: cover;
-	width: 590px;
-	height: 455px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .crypto_block img {
+    display: block;
+    object-fit: cover;
+    width: 590px;
+    height: 600px;
+  }
 }
