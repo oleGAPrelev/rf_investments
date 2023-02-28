@@ -12,23 +12,22 @@ export default function ConsultationForm() {
   } = useForm({ mode: 'onChange' });
 
   const formHandleSubmit = (data) => {
-    // fetch('http://localhost:3002/send', {
-    //   method: 'POST',
-    //   body: JSON.stringify(data),
-    //   headers: {
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json'
-    //   }
-    // })
-    //   .then((response) => (response.json()))
-    //   .then((response) => {
-    //     if (response.status === 'success') {
-    //       alert('Message Sent.');
-    //     } else if (response.status === 'fail') {
-    //       alert('Message failed to send.')
-    //     }
-    //   });
-    console.log(data);
+    fetch('http://localhost:3000/send', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    })
+      .then((response) => (response.json()))
+      .then((response) => {
+        if (response.status === 'success') {
+          alert('Message Sent.');
+        } else if (response.status === 'fail') {
+          alert('Message failed to send.')
+        }
+      });
     reset();
   };
 
