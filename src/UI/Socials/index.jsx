@@ -3,7 +3,6 @@ import { FaFacebookF } from 'react-icons/fa';
 import { CiYoutube } from 'react-icons/ci';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import s from './index.module.css';
-
 export default function Socials({ placement }) {
   return (
     <div className={s.icons_block}>
