@@ -12,7 +12,7 @@ export default function ConsultationForm() {
   } = useForm({ mode: 'onChange' });
 
   const formHandleSubmit = (data) => {
-    fetch('http://localhost:3333/send', {
+    fetch('http://164.92.182.164:3333/send', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
