@@ -12,7 +12,7 @@ export const offices = [
       image: '../../media/offices/office_2_a.jpg',
       title: 'Anton Fuchs, CEO RF Invest',
       contact: '+4917610175414',
-      location: [47.879, 10.618],
+      location: [47.874, 10.534],
       city: 'Kaufbeuren',
     },
     {
@@ -44,7 +44,7 @@ export const offices = [
       image: '../../media/offices/office_6_a.jpg',
       title: 'Oleg Zirkov',
       contact: '+4917662985309',
-      location: [47.880, 10.620],
+      location: [47.923, 10.668],
       city: 'Kaufbeuren',
     },
     {

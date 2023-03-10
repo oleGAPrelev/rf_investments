@@ -8,7 +8,7 @@ import s from './index.module.css';
 
 export default function DesktopView({ setModal }) {
   return (
-    <div>
+    <div className={'container'}>
       <div className={s.footer_container}>
         <div className={s.footer_map_wrapper}>
           <Map />
