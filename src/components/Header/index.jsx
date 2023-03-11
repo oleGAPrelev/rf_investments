@@ -11,14 +11,19 @@ export default function Header() {
           <div className={s.contacts_item_wrapper}>
             <FaPhoneAlt className={s.phone} />
             <p>
-              Anton Fuchs <br className={s.break} /> +49 176 10175414
+              Anton Fuchs <br className={s.break} />
+              <a className={s.contact_item} href='tel:+4917610175414'>
+                +49 176 10175414{' '}
+              </a>
             </p>
           </div>
           <div className={s.contacts_item_wrapper}>
             <FaPhoneAlt className={s.phone} />
             <p>
               Artur Runge <br className={s.break} />
-              +49 176 24672123
+              <a className={s.contact_item} href='tel:+4917624672123'>
+                +49 176 24672123{' '}
+              </a>
             </p>
           </div>
         </div>

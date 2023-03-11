@@ -69,6 +69,12 @@
   margin: 24px 0;
 }
 
+.contact_item {
+  text-decoration: none;
+  color: white;
+  margin-left: 6px;
+}
+
 /* socials */
 
 .footer_socials_phones_wrapper {
@@ -162,6 +168,10 @@
 .nav_menu a {
   text-decoration: none;
   color: #ffffff;
+}
+
+.nav_menu li {
+  cursor: pointer;
 }
 
 /* wrapper for positioning on desktop */

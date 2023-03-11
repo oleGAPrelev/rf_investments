@@ -1,20 +1,35 @@
-import {Link} from 'react-router-dom';
 import s from '../index.module.css';
 
-export default function FooterNav({setModal}) {
+export default function FooterNav({ setModal, setModalContent }) {
   return (
     <div className={s.nav_menu_wrap}>
-      <span>&copy;&nbsp;Copyright&nbsp;2023&nbsp;/&nbsp;R&F&nbsp;Invesmens</span>
+      <span>
+        &copy;&nbsp;Copyright&nbsp;2023&nbsp;/&nbsp;R&F&nbsp;Invesmens
+      </span>
       <ul className={s.nav_menu}>
-        <Link to="datenschutz" onClick={() => setModal(true)}>
+        <li
+          onClick={() => {
+            setModal(true);
+            setModalContent('datenschutz');
+          }}
+        >
           Datenschutz
-        </Link>
-        <Link to="impressum" onClick={() => setModal(true)}>
+        </li>
+        <li
+          onClick={() => {
+            setModal(true);
+            setModalContent('impressum');
+          }}
+        >
           Impressum
-        </Link>
-        <Link to="cookie" onClick={() => setModal(true)}>
+        </li>
+        <li
+          onClick={() => {
+            setModal(true);
+          }}
+        >
           Cookie-Einstellungen
-        </Link>
+        </li>
       </ul>
     </div>
   );
