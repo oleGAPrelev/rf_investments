@@ -37,6 +37,7 @@ export default function Map() {
           icon={mapIcon}
           eventHandlers={{
             mouseover: (event) => event.target.openPopup(),
+            click: (event) => event.target.openPopup(),
           }}
         >
           <Popup>
