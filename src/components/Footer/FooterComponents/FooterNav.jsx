@@ -4,7 +4,7 @@ export default function FooterNav({ setModal, setModalContent }) {
   return (
     <div className={s.nav_menu_wrap}>
       <span>
-        &copy;&nbsp;Copyright&nbsp;2023&nbsp;/&nbsp;R&F&nbsp;Invesmens
+        &copy;&nbsp;Copyright&nbsp;2023&nbsp;/&nbsp;R&F&nbsp;Investments
       </span>
       <ul className={s.nav_menu}>
         <li
@@ -26,9 +26,10 @@ export default function FooterNav({ setModal, setModalContent }) {
         <li
           onClick={() => {
             setModal(true);
+            setModalContent('cookie');
           }}
         >
-          Cookie-Einstellungen
+          Cookie-Erklärung
         </li>
       </ul>
     </div>

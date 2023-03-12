@@ -9,7 +9,7 @@ export const slick = [
       '../../media/appartementen/appartementen_e.png'
     ],
     title: 'Appartament',
-    price: 'ab 35.000 Euro',
+    price: 'ab 50.000 Euro',
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const slick = [
       '../../media/zimmer_2/zimmer_2_e.png'
     ],
     title: '2-Zimmer Wohnung',
-    price: 'ab 50.000 Euro',
+    price: 'ab 70.000 Euro',
   },
   {
     id: 3,
@@ -33,6 +33,6 @@ export const slick = [
       '../../media/zimmer_3/zimmer_3_e.png'
     ],
     title: '3-Zimmer Wohnung',
-    price: 'ab 70.000 Euro',
+    price: 'ab 90.000 Euro',
   },
 ];

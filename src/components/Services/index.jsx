@@ -11,7 +11,7 @@ export default function Services() {
 		<section className="section">
 			<div className={['container', s.services_container].join(' ')}>
 				<h2>
-					<span className={s.accent}>R & F Investmets</span> in Bulgarien
+					<span className={s.accent}>R & F Investments</span> in Bulgarien
 				</h2>
 
 				<div className={s.services_content_container}>

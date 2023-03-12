@@ -18,6 +18,7 @@ export default function Modal({ modal, setModal, modalContent }) {
         {modalContent === 'touren' && <InfoText />}
         {modalContent === 'impressum' && <Impressum />}
         {modalContent === 'datenschutz' && <Datenschutz />}
+        {modalContent === 'cookie' && <Datenschutz />}
 
         <div className={s.modal_button}>
           <Button onClick={() => setModal(false)}>Schließen</Button>
