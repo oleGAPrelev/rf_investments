@@ -12,7 +12,7 @@ export default function ConsultationForm() {
   } = useForm({ mode: 'onChange' });
 
   const formHandleSubmit = (data) => {
-    fetch('https://rfinvesmens.eu/send', {
+    fetch('https://rf-investments.com/send', {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
