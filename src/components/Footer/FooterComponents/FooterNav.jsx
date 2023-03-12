@@ -23,14 +23,14 @@ export default function FooterNav({ setModal, setModalContent }) {
         >
           Impressum
         </li>
-        <li
-          onClick={() => {
-            setModal(true);
-            setModalContent('cookie');
-          }}
-        >
-          Cookie-Erklärung
-        </li>
+        {/*<li*/}
+        {/*  onClick={() => {*/}
+        {/*    setModal(true);*/}
+        {/*    setModalContent('cookie');*/}
+        {/*  }}*/}
+        {/*>*/}
+        {/*  Cookie-Erklärung*/}
+        {/*</li>*/}
       </ul>
     </div>
   );

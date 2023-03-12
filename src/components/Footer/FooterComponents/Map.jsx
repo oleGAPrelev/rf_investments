@@ -48,6 +48,8 @@ export default function Map() {
             <b>{office.title}</b>
             <br />
             <a href={`tel:${office.contact}`}>{office.contact}</a>
+            <br />
+            <span>{office.city}</span>
           </Popup>
         </Marker>
       ))}
