@@ -8,21 +8,21 @@ export default function Impressum() {
 
 			<h2>Angaben gemäß § 5 TMG</h2>
 			<div>
-				<p>2M Real Estate OOD</p>
+				<p>R&F INVESTMENTS LTD</p>
 				<p>Harmony Suites 12</p>
-				<p>8240 Nesebar, Bulgarien</p>
+				<p>8230 Nesebar, Bulgarien</p>
 			</div>
 			<div>
-				<p>Handelsregister: ЕИК/ПИК 206168117</p>
+				<p>Handelsregister: ЕИК/ПИК 206566046</p>
 				<p>Registergericht: Bulgarian business register</p>
 			</div>
 			<h3>Vertreten durch: </h3>
-			<p>Dimitri Miller</p>
+			<p>Anton Fuchs, Artur Runge</p>
 
 			<h2>Kontakt</h2>
 			<div>
-				<p>Telefon: +49 170 2717543 </p>
-				<p>E-Mail: info@2m-real-estate.com</p>
+				<p>Telefon: +49 176 10175414, +49 176 24672123</p>
+				<p>E-Mail: info@rf-invest.eu</p>
 			</div>
 
 			<h2>Umsatzsteuer-ID</h2>

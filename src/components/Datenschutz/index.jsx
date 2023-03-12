@@ -208,16 +208,16 @@ export default function Datenschutz() {
 				</p>
 			</div>
 			<div>
-				<p>2M Real Estate OOD</p>
+				<p>R&F INVESTMENTS LTD</p>
 				<p>Nesebar</p>
 				<p>Harmony Suites 12</p>
 				<p>Sunny Beach</p>
-				<p>8240</p>
+				<p>8230</p>
 				<p>Bulgaria</p>
 			</div>
 			<div>
-				<p>Telefon: +49 170 2717543</p>
-				<p>E-Mail: info@2m-real-estate.com</p>
+				<p>Telefon: +49 176 10175414, +49 176 24672123</p>
+				<p>E-Mail: info@rf-invest.eu</p>
 			</div>
 			<div>
 				<p>
