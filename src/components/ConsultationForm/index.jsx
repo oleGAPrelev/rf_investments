@@ -16,16 +16,16 @@ export default function ConsultationForm() {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-      }
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
     })
-      .then((response) => (response.json()))
+      .then((response) => response.json())
       .then((response) => {
         if (response.status === 'success') {
           alert('Message Sent.');
         } else if (response.status === 'fail') {
-          alert('Message failed to send.')
+          alert('Message failed to send.');
         }
       });
     reset();
@@ -68,6 +68,7 @@ export default function ConsultationForm() {
               pattern: {
                 // eslint-disable-next-line no-useless-escape
                 value: /^[0-9\+\(\)\-\s]+$/,
+
                 message: 'Nur Zahlen, +, -, (, ), und Leerzeichen sind erlaubt',
               },
             })}

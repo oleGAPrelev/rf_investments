@@ -6,12 +6,22 @@ export default function PhoneContacts() {
     <div>
       <div className={s.contacts}>
         <FaPhoneAlt className={s.phone} />
-        <p>Anton Fuchs +49 176 10175414</p>
+        <p>
+          Anton Fuchs
+          <a className={s.contact_item} href='tel:+4917610175414'>
+            +49 176 10175414
+          </a>
+        </p>
       </div>
 
       <div className={s.contacts}>
         <FaPhoneAlt className={s.phone} />
-        <p>Artur Runge +49 176 24672123</p>
+        <p>
+          Artur Runge{' '}
+          <a className={s.contact_item} href='tel:+4917624672123'>
+            +49 176 24672123{' '}
+          </a>
+        </p>
       </div>
     </div>
   );

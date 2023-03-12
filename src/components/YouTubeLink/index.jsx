@@ -18,7 +18,7 @@ export default function YouTubeLink() {
           height='360'
           src='https://www.youtube.com/embed/MeCWAFMu_XE'
           title='YouTube video player'
-          frameborder="0"
+          frameBorder='0'
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
         ></iframe>
       </div>

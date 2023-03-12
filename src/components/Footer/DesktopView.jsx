@@ -6,7 +6,7 @@ import PhoneContacts from './FooterComponents/PhoneContacts';
 import FooterNav from './FooterComponents/FooterNav';
 import s from './index.module.css';
 
-export default function DesktopView({ setModal }) {
+export default function DesktopView({ setModal, setModalContent }) {
   return (
     <div className={'container'}>
       <div className={s.footer_container}>
@@ -26,7 +26,7 @@ export default function DesktopView({ setModal }) {
           </div>
         </div>
       </div>
-      <FooterNav setModal={setModal} />
+      <FooterNav setModal={setModal} setModalContent={setModalContent} />
     </div>
   );
 }

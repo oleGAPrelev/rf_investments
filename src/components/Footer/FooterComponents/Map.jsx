@@ -1,7 +1,7 @@
-import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import s from '../index.module.css';
-import {offices} from '../../../data/offices';
+import { offices } from '../../../data/offices';
 
 const {
   REACT_APP_MAPBOX_ACCESS_TOKEN,
@@ -17,13 +17,13 @@ export default function Map() {
     iconAnchor: [17, 17],
     popupAnchor: [0, -17],
   });
-  
+
   return (
     <MapContainer
       center={mapCenterPosition}
       zoom={6}
       scrollWheelZoom={true}
-      style={{height: '100%', minHeight: '400px', width: '100%'}}
+      style={{ height: '100%', minHeight: '400px', width: '100%' }}
     >
       <TileLayer
         url={`https://api.mapbox.com/styles/v1/${REACT_APP_MAPBOX_USERNAME}/${REACT_APP_MAPBOX_STYLE_ID}/tiles/256/{z}/{x}/{y}@2x?access_token=${REACT_APP_MAPBOX_ACCESS_TOKEN}`}
@@ -31,10 +31,23 @@ export default function Map() {
         accessToken={REACT_APP_MAPBOX_ACCESS_TOKEN}
       />
       {offices.map((office) => (
-        <Marker key={office.id} position={office.location} icon={mapIcon}>
+        <Marker
+          key={office.id}
+          position={office.location}
+          icon={mapIcon}
+          eventHandlers={{
+            mouseover: (event) => event.target.openPopup(),
+          }}
+        >
           <Popup>
-            <img src={office.image} className={s.popup_img} alt={office.title}/>
-            <b>{office.title}</b><br/><a href={`tel:${office.contact}`}>{office.contact}</a>
+            <img
+              src={office.image}
+              className={s.popup_img}
+              alt={office.title}
+            />
+            <b>{office.title}</b>
+            <br />
+            <a href={`tel:${office.contact}`}>{office.contact}</a>
           </Popup>
         </Marker>
       ))}
