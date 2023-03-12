@@ -4,6 +4,7 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 import InfoText from '../InfoText';
 import Impressum from '../Impressum';
 import Datenschutz from '../Datenschutz';
+import Cookie from '../Cookie';
 import Button from '../../UI/Button';
 
 export default function Modal({ modal, setModal, modalContent }) {
@@ -18,7 +19,7 @@ export default function Modal({ modal, setModal, modalContent }) {
         {modalContent === 'touren' && <InfoText />}
         {modalContent === 'impressum' && <Impressum />}
         {modalContent === 'datenschutz' && <Datenschutz />}
-        {modalContent === 'cookie' && <Datenschutz />}
+        {modalContent === 'cookie' && <Cookie />}
 
         <div className={s.modal_button}>
           <Button onClick={() => setModal(false)}>Schließen</Button>
