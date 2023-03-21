@@ -23,7 +23,7 @@ export default function ConsultationForm() {
       .then((response) => response.json())
       .then((response) => {
         if (response.status === 'success') {
-          alert('Message Sent.');
+          alert('Nachricht gesendet.');
         } else if (response.status === 'fail') {
           alert('Message failed to send.');
         }

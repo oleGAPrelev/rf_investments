@@ -25,6 +25,7 @@
 @media screen and (min-width: 768px) {
     .touren_block {
         display: flex;
+        align-items: center;
     }
 }
 
