@@ -29,7 +29,7 @@ export default function Impressum() {
 			<div>
 				<p>
 					Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
-					<p>206566046</p>
+					<p>BG206566046</p>
 				</p>
 			</div>
 
