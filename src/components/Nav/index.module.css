@@ -7,26 +7,13 @@
     color: #ffffff;
     animation: image 6s ease-in-out infinite alternate;
     position: relative;
-    min-height: calc(150vh - 358px);
+    /*height: calc(150vh - 358px);*/
+    height: 55vh;
 }
 
-.headlines {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
     .nav {
-        min-height: 55vh;
-    }
-
-    .contact_button_wrapper {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        padding: 20px;
+        height: calc(100vh - 168px);
     }
 }
 
@@ -38,6 +25,13 @@
     100% {
         background-image: url('media/new-day-bg.jpg');
     }
+}
+
+.headlines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .nav_block {
@@ -87,18 +81,18 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .nav_contacts h1 {
-    font-size: 60px;
-    margin-bottom: 48px;
-  }
+    .nav_contacts h1 {
+        font-size: 60px;
+        margin-bottom: 48px;
+    }
 }
 
 @media screen and (min-width: 1920px) {
-  .nav_contacts h1 {
-    font-size: 76px;
-    margin-bottom: 48px;
-    max-width: 800px;
-  }
+    .nav_contacts h1 {
+        font-size: 76px;
+        margin-bottom: 48px;
+        max-width: 800px;
+    }
 }
 
 .nav_contacts p {
@@ -115,17 +109,17 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .nav_contacts p {
-    font-size: 24px;
-  }
+    .nav_contacts p {
+        font-size: 24px;
+    }
 }
 
 @media screen and (min-width: 1920px) {
-  .nav_contacts p {
-    font-size: 32px;
-    margin-bottom: 48px;
-    margin-top: 96px;
-  }
+    .nav_contacts p {
+        font-size: 32px;
+        margin-bottom: 48px;
+        margin-top: 96px;
+    }
 }
 
 .nav_contacts button {
@@ -136,13 +130,13 @@
 
 @media screen and (min-width: 768px) {
     .nav_contacts button {
-        margin-bottom: 80px;
+        margin-bottom: 35px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .nav_contacts button {
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
 }
 
