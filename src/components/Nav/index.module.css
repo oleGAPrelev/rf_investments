@@ -7,19 +7,27 @@
     color: #ffffff;
     animation: image 6s ease-in-out infinite alternate;
     position: relative;
+    min-height: calc(150vh - 358px);
+}
+
+.headlines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 @media screen and (max-width: 767px) {
     .nav {
-        min-height: 50vh;
+        min-height: 55vh;
     }
-}
 
-.contact_button_wrapper {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
+    .contact_button_wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+    }
 }
 
 @keyframes image {
