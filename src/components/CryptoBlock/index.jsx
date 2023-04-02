@@ -12,7 +12,7 @@ export default function CryptoBlock() {
           <h2>Bezahlen Sie Ihre Wohnung mit Krypto </h2>
           <p>
             Bei uns haben Sie die Möglichkeit Ihre Wohnung mit Kryptowährungen
-            zu kaufen! Interesse? Fragen Sie hier an!
+            zu kaufen! Interesse? Fragen Sie hier&nbsp;an!
           </p>
           <Link
             to='consultant'

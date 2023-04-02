@@ -50,7 +50,7 @@
 
 @media screen and (min-width: 768px) {
   .nav {
-    height: calc(100vh - 138px);
+    height: calc(100vh - 108px);
   }
 }
 
