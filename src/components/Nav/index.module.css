@@ -5,16 +5,21 @@
   background-size: cover;
   background-position: bottom;
   color: #ffffff;
-  animation: image 6s ease-in-out infinite alternate;
   position: relative;
-  /*height: calc(150vh - 358px);*/
   height: 55vh;
 }
 
-@media screen and (min-width: 768px) {
-  .nav {
-    height: calc(100vh - 168px);
-  }
+.nav::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('media/night-bg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  animation: image 6s ease-in-out infinite alternate;
 }
 
 @keyframes image {
@@ -26,6 +31,38 @@
     background-image: url('media/day-bg.jpg');
   }
 }
+
+.nav * {
+  z-index: 1;
+}
+
+/*.nav {*/
+/*  padding-top: 20px;*/
+/*  padding-bottom: 20px;*/
+/*  background-image: url('media/night-bg.jpg');*/
+/*  background-size: cover;*/
+/*  background-position: bottom;*/
+/*  color: #ffffff;*/
+/*  animation: image 6s ease-in-out infinite alternate;*/
+/*  position: relative;*/
+/*  height: 55vh;*/
+/*}*/
+
+@media screen and (min-width: 768px) {
+  .nav {
+    height: calc(100vh - 138px);
+  }
+}
+
+/*@keyframes image {*/
+/*  0% {*/
+/*    background-image: url('media/night-bg.jpg');*/
+/*  }*/
+
+/*  100% {*/
+/*    background-image: url('media/day-bg.jpg');*/
+/*  }*/
+/*}*/
 
 .headlines {
   display: flex;
