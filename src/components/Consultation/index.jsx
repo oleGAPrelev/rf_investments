@@ -7,21 +7,18 @@ export default function Consultation() {
   return (
     <section
       className={['section', s.consultation_section].join(' ')}
-      id='consultant'
+      id="consultant"
     >
-      <video className={s.background_video} autoPlay='start' muted loop>
-        <source src={video} type='video/mp4'></source>
-      </video>
-
+      <video className={s.background_video} src={video} type="video/mp4" autoPlay loop muted playsInline />
       <div className={['container', s.consultation_container].join(' ')}>
         <div className={s.consultation_content}>
           <div className={s.consultation_text}>
             <h2>Brauchen Sie eine Beratung?</h2>
             <p>Kontaktieren Sie uns und wir helfen Ihnen</p>
           </div>
-
+          
           <div>
-            <ConsultationForm />
+            <ConsultationForm/>
           </div>
         </div>
       </div>

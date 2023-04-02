@@ -18,10 +18,15 @@ export default function MobileTabletView({ setModal, setModalContent }) {
         <div className={s.footer_map_wrapper}>
           <Map />
         </div>
-
+        
         <div className={s.footer_socials_phones_wrapper}>
-          <Socials placement='footer' />
-          <PhoneContacts />
+          <div className={s.socials}>
+            <Socials placement="footer" />
+          </div>
+          
+          <div className={s.phone_contacts}>
+            <PhoneContacts />
+          </div>
         </div>
 
         <FooterNav setModal={setModal} setModalContent={setModalContent} />

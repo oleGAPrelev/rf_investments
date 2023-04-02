@@ -79,6 +79,27 @@
 
 .footer_socials_phones_wrapper {
   margin-bottom: 40px;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  order: 2;
+}
+
+.phone_contacts {
+  order: 1;
+}
+
+@media (min-width: 768px) {
+  .socials {
+    order: 1;
+  }
+  .phone_contacts {
+    order: 2;
+  }
 }
 
 /* map */

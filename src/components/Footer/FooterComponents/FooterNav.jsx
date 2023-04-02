@@ -4,7 +4,7 @@ export default function FooterNav({ setModal, setModalContent }) {
   return (
     <div className={s.nav_menu_wrap}>
       <span>
-        &copy;&nbsp;Copyright&nbsp;2023&nbsp;/&nbsp;R&F&nbsp;Investments
+        <span>&copy;&nbsp;Copyright&nbsp;2023&nbsp;</span>
       </span>
       <ul className={s.nav_menu}>
         <li

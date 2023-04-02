@@ -68,11 +68,19 @@
 .nav_contacts h1 {
   max-width: 520px;
   font-family: 'DM Sans';
-  font-weight: 500;
-  font-size: 36px;
+  font-weight: 700;
+  font-size: 28px;
   margin-bottom: 18px;
   margin-top: 36px;
+  font-stretch: extra-condensed;
 }
+
+@media screen and (min-width: 390px) {
+  .nav_contacts h1 {
+    font-size: 32px;
+  }
+}
+
 
 @media screen and (min-width: 480px) {
   .nav_contacts h1 {
