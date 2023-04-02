@@ -33,7 +33,7 @@
 }
 
 .crypto_block h2 {
-  margin-bottom: 68px;
+  margin-bottom: 0;
   font-size: 40px;
   font-weight: 700;
 }
@@ -56,8 +56,10 @@
   font-size: 16px;
   text-align: justify;
   max-width: 430px;
-  margin: 32px 0;
+  margin: 45px 0 50px;
+  width: 70%;
 }
+
 
 .crypto_block button {
   padding: 12px 46px;

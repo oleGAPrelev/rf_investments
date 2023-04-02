@@ -7,7 +7,7 @@
 
 .footer_container {
   width: 100%;
-  padding: 32px 0 60px 0;
+  padding: 0px 0 30px 0;
 }
 
 @media (min-width: 768px) {
@@ -157,7 +157,7 @@
   margin-bottom: 10px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 365px) {
   .nav_menu_wrap {
     flex-direction: row;
   }
