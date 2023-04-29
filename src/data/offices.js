@@ -3,7 +3,7 @@ export const offices = [
       id: 1,
       image: '../../media/offices/office_1_a.jpg',
       title: 'Alexander Judin',
-      contact: '+4915201789759',
+      contact: '+497313756204',
       location: [48.326, 10.051],
       city: 'Senden',
     },
