@@ -10,6 +10,7 @@
     font-size: 48px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .services_content_container {
     display: flex;
@@ -96,6 +97,14 @@
   }
 }
 
-.accent {
-  color: #0957cb;
+@media screen and (min-width: 768px) {
+  .accent {
+    color: #0957cb;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .services_break {
+    display: none;
+  }
 }

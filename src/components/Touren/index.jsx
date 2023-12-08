@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Button from '../../UI/Button';
 import s from './index.module.css';
 import touren from './media/touren_img.png';
 
-export default function Touren({ setModal }) {
+export default function Touren({ setModal, setModalContent }) {
   return (
     <section className={['section', s.touren_section].join(' ')}>
       <div className={'container'}>
@@ -19,13 +18,19 @@ export default function Touren({ setModal }) {
               EUR
             </h3>
             <p>
-              Unser erfahrenes Personal organisiert Ihre gesamte Reise von Ihren
-              Ankunft in Bulgarien bis zu Ihrer Abreise für nur 250 -EUR
+              Unser erfahrenes Personal organisiert Ihre gesamte Reise von Ihrer
+              Ankunft in Bulgarien bis zu der Abreise für nur 250,00€
             </p>
 
-            <Link to='mehr_info'>
-              <Button onClick={() => setModal(true)}> Mehr</Button>
-            </Link>
+            <Button
+              onClick={() => {
+                setModal(true);
+                setModalContent('touren');
+              }}
+            >
+              {' '}
+              Mehr
+            </Button>
           </div>
         </div>
       </div>

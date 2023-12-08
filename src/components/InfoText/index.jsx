@@ -7,14 +7,14 @@ export default function InfoText() {
 			<h2>RF Investments</h2>
 			<div>
 				<p>
-					Die RF Investments ist ein europaweit tätiger, auf die
-					Wohnimmobilienwirtschaft spezialisierte Unternehmen. Der
+					RF Investments ist ein europaweit tätiger, auf die
+					Wohnimmobilienwirtschaft spezialisiertes Unternehmen. Der
 					Tätigkeitsschwerpunkt liegt im Verkauf und Vermietung von
 					Immobilienobjekten auf gefragten Urlaubsorten. Mit ihrem Angebot
-					realisiert die RF Investments Potentiale sowohl für private
-					Kapitalanleger als auch für Selbstnutzer. Unsere kompetente
-					Mitarbeiter organisieren den Kauf und begleiten die ganzen Prozesse
-					bis zum Schlüsselübergabe von ihrer Traumimmobilie.
+					realisiert die RF Investments Potentiale, sowohl für private
+					Kapitalanleger, als auch für Selbstnutzer. Unsere kompetenten
+					Mitarbeiter organisieren den Kauf und begleiten Sie bei den ganzen
+					Prozessen bis zur Schlüsselübergabe von ihrer Traumimmobilie.
 				</p>
 			</div>
 		</div>

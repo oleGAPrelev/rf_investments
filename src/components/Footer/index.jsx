@@ -4,15 +4,18 @@ import MobileTabletView from './MobileTabletView';
 import DesktopView from './DesktopView';
 import s from './index.module.css';
 
-export default function Footer({ setModal }) {
+export default function Footer({ setModal, setModalContent }) {
   const isDesktop = useMediaQuery('(min-width: 768px)');
 
   return (
     <footer className={s.footer}>
       {isDesktop ? (
-        <DesktopView setModal={setModal} />
+        <DesktopView setModal={setModal} setModalContent={setModalContent} />
       ) : (
-        <MobileTabletView setModal={setModal} />
+        <MobileTabletView
+          setModal={setModal}
+          setModalContent={setModalContent}
+        />
       )}
     </footer>
   );

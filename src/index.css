@@ -19,7 +19,6 @@ body {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 20px;
@@ -29,7 +28,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -37,26 +35,28 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
     padding-left: 36px;
     padding-right: 36px;
+    width: 90vw;
+    max-width: 1440px;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .container {
-    width: 1600px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 46px;
+    padding-bottom: 46px;
   }
 }
